@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html id="airnguru" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html id="airnguru" class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html id="airnguru" class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html id="airnguru" class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="content-type" content="text/html" />
+		<title>Fare Visualizer | Airnguru</title>
+		<meta name="title" content="Fare Visualizer | Airnguru" />
+		<meta name="DC.Title" content="Fare Visualizer | Airnguru" />
+		<meta http-equiv="title" content="Fare Visualizer | Airnguru" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="language" content="en-US" />
+		<meta name="DC.language" content="en-US" />
+		<meta http-equiv="language" content="en-US" />
+		<meta name="robots" content="nofollow" />
+		<meta name="google" content="notranslate" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		  
+		<!-- Normalize -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!-- Custom -->
+		<link rel="stylesheet" type="text/css" href="includes/css/01-general.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/02-layout.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/03-buttons.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/04-anchors.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/05-dialog-panel.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/06-dropdown.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/07-tag-items.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/08-toggle.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/09-alert-bubble.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/10-separation.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/11-headlines.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/12-disclaimer.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/13-form.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/14-display-box.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/15-aside.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/16-workspace.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/17-modal.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/18-overlay.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/19-notifications.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/20-body-collapse.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/21-locked-screen.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/22-fonts.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/23-log-in.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/24-collapsible-box.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/placeholders.css" />
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/ed033078e2.js" crossorigin="anonymous"></script>
+
+		<!-- Scripts -->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body id="light-mode"> <!-- id="dark-mode" class="collapsed" -->
+		<main>
+	        <aside>
+	        	<section id="query-build">
+	        		<header>
+						<div class="row display-title">
+							<div class="col">
+								<h2>
+									Build Query
+								</h2>
+								<button type="button" class="button button-utility button-tertiary button-xs" data-tooltip="Clear query" data-flow="bottom">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-regular fa-eraser"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+							</div>
+							<div class="col justify-flex-end">
+								<button type="button" class="button button-utility button-tertiary">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-sharp fa-solid fa-xmark"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+							</div>
+						</div>
+					</header>
+					<div class="panel-body">
+						<form>
+							<div class="row display-tab-nav tab-nav-primary">
+								<div class="col">
+									<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Fares
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-quaternary button-tab active" tabindex="-1"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Changes
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Background
+											</span>
+										</span>
+									</button>
+									<div class="tab-nav-marker"></div>
+								</div>
+							</div>
+							<div class="row display-tab-nav tab-nav-secondary">
+								<div class="col">
+									<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												General
+											</span>
+											<span class="button-text">
+												0/17
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Details
+											</span>
+											<span class="button-text">
+												0/17
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Trip/Date
+											</span>
+											<span class="button-text">
+												0/21
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-quaternary button-tab active" tabindex="-1"> <!-- class="active" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												Workteam
+											</span>
+											<span class="button-text">
+												0/13
+											</span>
+										</span>
+									</button>
+								</div>
+							</div>
+							<fieldset>
+								<div class="fieldset-body">
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<h4>
+														Analyst
+													</h4>
+												</div>
+												<div class="dialog-box"> <!-- class="active" -->
+													<div class="input-group">
+														<input type="text" value="Select..." readonly="true" class="input-select">
+													</div>
+													<div class="dialog-panel dialog-scroll bottom-left">
+														<header>
+										        			<div class="form-group">
+							        							<div class="input-group">
+									        						<input type="text" placeholder="Search" class="input-search">
+								        						</div>
+								        					</div>
+										        		</header>
+														<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 1
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+														<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 2
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<h4>
+														Supervisor
+													</h4>
+												</div>
+												<div class="dialog-box"> <!-- class="active" -->
+													<div class="input-group">
+														<input type="text" value="Select..." readonly="true" class="input-select">
+													</div>
+													<div class="dialog-panel dialog-scroll bottom-left">
+														<header>
+										        			<div class="form-group">
+							        							<div class="input-group">
+									        						<input type="text" placeholder="Search" class="input-search">
+								        						</div>
+								        					</div>
+										        		</header>
+														<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 1
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+														<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 2
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<h4>
+														Manager
+													</h4>
+												</div>
+												<div class="dialog-box"> <!-- class="active" -->
+													<div class="input-group">
+														<input type="text" value="Select..." readonly="true" class="input-select">
+													</div>
+													<div class="dialog-panel dialog-scroll bottom-left">
+														<header>
+										        			<div class="form-group">
+							        							<div class="input-group">
+									        						<input type="text" placeholder="Search" class="input-search">
+								        						</div>
+								        					</div>
+										        		</header>
+														<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 1
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+														<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 2
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<h4>
+														Region
+													</h4>
+												</div>
+												<div class="dialog-box"> <!-- class="active" -->
+													<div class="input-group">
+														<input type="text" value="Select..." readonly="true" class="input-select">
+													</div>
+													<div class="dialog-panel dialog-scroll bottom-left">
+														<header>
+										        			<div class="form-group">
+							        							<div class="input-group">
+									        						<input type="text" placeholder="Search" class="input-search">
+								        						</div>
+								        					</div>
+										        		</header>
+														<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 1
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+														<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 2
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<h4>
+														Region Flow
+													</h4>
+												</div>
+												<div class="dialog-box"> <!-- class="active" -->
+													<div class="input-group">
+														<input type="text" value="Select..." readonly="true" class="input-select">
+													</div>
+													<div class="dialog-panel dialog-scroll bottom-left">
+														<header>
+										        			<div class="form-group">
+							        							<div class="input-group">
+									        						<input type="text" placeholder="Search" class="input-search">
+								        						</div>
+								        					</div>
+										        		</header>
+														<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 1
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+														<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+															<span>
+																<span class="button-text">
+																	Option 2
+																</span>
+															</span>
+															<span>
+																<span class="button-icon icon-check">
+																	<i class="fa-sharp fa-solid fa-check"></i>
+																</span>
+															</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group checkbox-group checkbox-validation"> <!-- class="stack-group form-error" -->
+												<div class="title-group">
+													<h4>
+														Status
+													</h4>
+													<span class="validation-message">
+														Select at least 1 option
+													</span>
+												</div>
+												<div class="input-groups-container">
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Dismissed
+															</span>
+												        </label>
+													</div>
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Pending
+															</span>
+												        </label>
+													</div>
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Worked
+															</span>
+												        </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<label for="fltr1">
+														Tier
+													</label>
+												</div>
+												<div class="input-group half-field">
+													<input type="text" id="fltr1" class="input-text">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group checkbox-group checkbox-validation"> <!-- class="stack-group form-error" -->
+												<div class="title-group">
+													<h4>
+														Relevant
+													</h4>
+													<span class="validation-message">
+														Select at least 1 option
+													</span>
+												</div>
+												<div class="input-groups-container">
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Yes
+															</span>
+												        </label>
+													</div>
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																No
+															</span>
+												        </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group checkbox-group checkbox-validation"> <!-- class="stack-group form-error" -->
+												<div class="title-group">
+													<h4>
+														Market Type
+													</h4>
+													<span class="validation-message">
+														Select at least 1 option
+													</span>
+												</div>
+												<div class="input-groups-container">
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Offline
+															</span>
+												        </label>
+													</div>
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Online
+															</span>
+												        </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<label for="fltr2">
+														Fare Notes
+													</label>
+												</div>
+												<div class="input-group half-field">
+													<input type="text" id="fltr2" class="input-text">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<label for="fltr3">
+														Request Number
+													</label>
+												</div>
+												<div class="input-group half-field">
+													<input type="text" id="fltr3" class="input-text">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<div class="title-group">
+													<label for="fltr4">
+														Category Market
+													</label>
+												</div>
+												<div class="input-group half-field">
+													<input type="text" id="fltr4" class="input-text">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group checkbox-group checkbox-validation"> <!-- class="stack-group form-error" -->
+												<div class="title-group">
+													<h4>
+														Watchlist
+													</h4>
+													<span class="validation-message">
+														Select at least 1 option
+													</span>
+												</div>
+												<div class="input-groups-container">
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																Yes
+															</span>
+												        </label>
+													</div>
+													<div class="input-group">
+														<label class="checkbox">
+												            <input type="checkbox" checked="">
+												            <span class="checkbox-container"></span>
+															<span class="checkbox-text">
+																No
+															</span>
+												        </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+							<div class="row display-form-main-actions">
+								<div class="col">
+									<button type="button" class="button button-cta button-primary">
+										<span>
+											<span class="button-text">
+												Search
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-secondary">
+										<span>
+											<span class="button-text">
+												Cancel
+											</span>
+										</span>
+									</button>
+								</div>
+								<div class="col justify-flex-end">
+									<button type="button" class="button button-utility button-tertiary">
+			        					<span>
+			        						<span class="button-icon">
+			        							<i class="fa-sharp fa-solid fa-eye"></i>
+			        						</span>
+			        					</span>
+			        				</button>
+			        				<div class="dialog-box"> <!-- class="active" -->
+										<button type="button" class="button button-utility button-tertiary">
+				        					<span>
+				        						<span class="button-icon">
+				        							<i class="fa-sharp fa-regular fa-ellipsis"></i>
+				        						</span>
+				        					</span>
+				        				</button>
+				        				<div class="dialog-panel dialog-auto top-right">
+							        		<button type="button" class="button button-dialog-panel button-tertiary">
+												<span>
+													<span class="button-text">
+														Saved queries
+													</span>
+												</span>
+												<span>
+					        						<span class="button-icon icon-chevron">
+														<i class="fa-sharp fa-solid fa-chevron-right"></i>
+													</span>
+					        					</span>
+											</button>
+											<div class="save-action">
+								        		<button type="button" class="button button-primary">
+													<span>
+														<span class="button-text">
+															Save query
+														</span>
+													</span>
+												</button>
+											</div>
+				        				</div>
+				        			</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+	        </aside>
+	    </main>
+
+		<!-- jQuery  -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+			
+		<!-- Main -->
+		<script type="text/javascript" src="includes/js/main.js"></script>
+	</body>
+</html>
