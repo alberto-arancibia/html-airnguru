@@ -1,0 +1,344 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    7. TAG ITEM STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    7.1 - TAG ITEM BASE STYLES
+===========================================================================*/
+
+/********************************************
+    7.1.1 | .tag-item
+********************************************/
+
+.tag-item {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    padding: 0;
+    width: auto;
+}
+.tag-item > span {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.tag-item:not(:last-child) {
+    margin-right: 4px;
+}
+.tag-item strong {
+    font-family: 'roboto-bold-condensed';
+    font-size: 0.9rem; /* FONT SIZE */
+    margin: 0 4px;
+    text-transform: capitalize;
+}
+.tag-item strong:first-of-type {
+    margin-left: 0;
+}
+.display-actions .tag-item {
+    cursor: pointer;
+}
+
+
+/*===========================================================================
+    7.2 - TAG ITEM INNER ELEMENTS
+===========================================================================*/
+
+/********************************************
+    7.2.1 | .tag-text
+********************************************/
+
+.tag-text {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'roboto-condensed';
+    font-size: 0.923rem; /* FONT SIZE */
+    justify-content: center;
+    line-height: unset;
+    text-rendering: optimizeLegibility;
+    padding: 0 6px;
+}
+
+/********************************************
+    7.2.2 | .tag-icon
+********************************************/
+
+.tag-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.923rem; /* FONT SIZE */
+    justify-content: center;
+    line-height: unset;
+    text-rendering: optimizeLegibility;
+    padding: 0 6px;
+}
+
+/********************************************
+    7.2.3 | .tag-amount
+********************************************/
+
+.tag-amount {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    font-family: 'roboto-condensed';
+    font-size: 0.923rem; /* FONT SIZE */
+    justify-content: center;
+    line-height: unset;
+    text-rendering: optimizeLegibility;
+    border-radius: 0 6px 6px 0;
+    height: 22px;
+}
+
+/********************************************
+    7.2.4 | <button>
+********************************************/
+
+#airnguru .tag-item .button-icon {
+    padding: 0 6px 0 0;
+    font-size: 0.923rem; /* FONT SIZE */
+}
+
+
+/*===========================================================================
+    7.3 - TAG ITEM COLOR STYLES
+===========================================================================*/
+
+/********************************************
+    7.3.1 | .tag-primary
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-primary {
+        background-color: #DEEEFF; /* ACCENT COLOR */
+        border-color: #008FF7; /* ACCENT COLOR */
+        color: #008FF7; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-primary {
+        background-color: #F4F6FC; /* ACCENT COLOR */
+        border-color: #FFE681; /* ACCENT COLOR */
+        color: #FFE681; /* ACCENT COLOR */
+    }
+
+/********************************************
+    7.3.2 | .tag-secondary
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-secondary {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border-color: #DDDDDD; /* LIGHT MODE */
+        color: #333333; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-secondary {
+        background-color: #504E53; /* DARK MODE */
+        border-color: #6C6C6C; /* DARK MODE */
+        color: #E2D7D7; /* DARK MODE */
+    }
+
+/*=========================
+    .tag-amount
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-secondary .tag-amount {
+        background-color: #FCFCFC; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-secondary .tag-amount {
+        background-color: #454448; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+/********************************************
+    7.3.3 | .tag-success
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-success {
+        background-color: #F0FDF4; /* LIGHT MODE */
+        border-color: #C4EBD2; /* LIGHT MODE */
+        color: #15803D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-success {
+        background-color: #504E53; /* DARK MODE */
+        border-color: #6C6C6C; /* DARK MODE */
+        color: #93F297; /* DARK MODE */
+    }
+
+/*=========================
+    .tag-amount
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-success .tag-amount {
+        background-color: #DFF6E8; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-success .tag-amount {
+        background-color: #454448; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+/********************************************
+    7.3.4 | .tag-danger
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-danger {
+        background-color: #FEF2F2; /* LIGHT MODE */
+        border-color: #FADDDD; /* LIGHT MODE */
+        color: #B91C1C; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-danger {
+        background-color: #504E53; /* DARK MODE */
+        border-color: #6C6C6C; /* DARK MODE */
+        color: #FB7185; /* DARK MODE */
+    }
+
+/*=========================
+    .tag-amount
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-danger .tag-amount {
+        background-color: #FFE6E6; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-danger .tag-amount {
+        background-color: #454448; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+/********************************************
+    7.3.5 | .tag-warning
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-warning {
+        background-color: #FEFCE8; /* LIGHT MODE */
+        border-color: #F3E6BB; /* LIGHT MODE */
+        color: #854D0E; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-warning {
+        background-color: #504E53; /* DARK MODE */
+        border-color: #6C6C6C; /* DARK MODE */
+        color: #EABC25; /* DARK MODE */
+    }
+
+/*=========================
+    .tag-amount
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tag-warning .tag-amount {
+        background-color: #FCF2D5; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tag-warning .tag-amount {
+        background-color: #454448; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    7.4 - SIZE STYLES
+===========================================================================*/
+
+/********************************************
+    7.4.1 | .tag-xs
+********************************************/
+
+.tag-xs {
+    border-radius: 2px;
+    height: 20px;
+}
+.tag-xs .tag-text {
+    border-radius: 0;
+    height: 20px;
+    padding: 0 4px;
+}
+.tag-xs .tag-amount {
+    border-radius: 0;
+    height: 18px;
+    padding: 0 4px;
+}
+

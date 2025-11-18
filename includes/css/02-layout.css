@@ -1,0 +1,306 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    2. LAYOUT STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    2.1 - PAGE STRUCTURE
+===========================================================================*/
+
+/********************************************
+    2.1.1 | html
+********************************************/
+
+html {
+    font-size: 13px; /* FONT SIZE */
+    font-weight: 400;
+    height: 100%;
+    letter-spacing: 0.03rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+/********************************************
+    2.1.2 | body
+********************************************/
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    body#light-mode {
+        background-color: #F0F0F0; /* LIGHT MODE */
+        color: #333333; /* LIGHT MODE */
+        -webkit-tap-highlight-color: #00D882; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    body#dark-mode {
+        background-color: #212330; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+        webkit-tap-highlight-color: #00D882; /* DARK MODE */
+    }
+
+body:not(.user-is-tabbing) a:focus,
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+    outline: none;
+}
+
+
+/*===========================================================================
+    2.2 - MAIN NAVIGATION (SIDEBAR)
+===========================================================================*/
+
+/********************************************
+    2.2.1 | #main-navigation
+********************************************/
+
+#main-navigation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 250px;
+    overflow: auto;
+    z-index: 55;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #main-navigation {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+    
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #main-navigation {
+        background-color: #302E2F; /* DARK MODE */
+    }
+
+/********************************************
+    2.2.2 | #main-navigation > header
+********************************************/
+
+#main-navigation > header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 58px;
+    padding: 0 22px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #main-navigation > header {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #main-navigation > header {
+        background-color: #302E2F; /* DARK MODE */
+    }
+
+#main-navigation > header > img:nth-child(2) {
+    display: none;
+}
+
+/********************************************
+    2.2.3 | #modules
+********************************************/
+
+#modules {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0 0 8px 0;
+}
+#modules .separation.horizontal.solid {
+    align-self: center;
+    margin: 12px 0;
+    width: 230px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #modules .separation.horizontal.solid {
+        border-color: #E5E7EB; /* LIGHT MODE */
+    }    
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #modules .separation.horizontal.solid {
+        border-color: #424245; /* DARK MODE */
+    }
+
+/********************************************
+    2.2.4 | .suite-container
+********************************************/
+
+.suite-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*===========================================================================
+    2.3 MAIN CONTENT AREA
+===========================================================================*/
+
+/********************************************
+    2.3.1 | main
+********************************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    width: auto;
+    z-index: 50;
+}
+
+/********************************************
+    2.3.2 | #module-container   
+********************************************/
+
+#module-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/********************************************
+    2.3.3 | #module-container > header
+********************************************/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #module-container > header {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+    
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #module-container > header {
+        background-color: #302E2F; /* DARK MODE */
+    }
+
+/*=========================
+    #module-header
+=========================*/
+
+#module-header {
+    align-items: center;
+    height: 50px;
+    padding: 0 14px;
+}
+
+/*=========================
+    #utility-navigation
+=========================*/
+
+#utility-navigation {
+    align-items: center;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+}
+#utility-navigation > *:not(:last-child) {
+    margin-right: 6px;
+}
+
+/********************************************
+    2.3.4 | #module-body
+********************************************/
+
+#module-body {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+#module-body > .row:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+#module-body > .row > .col:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+    /*-------------------------
+        Responsive Behavior
+    -------------------------*/
+
+    @media (max-width: 992px) {
+        
+        #module-body > .row {
+            flex-direction: column;
+        }
+        #module-body > .row > .col:not(:last-of-type) {
+            margin-bottom: 8px;
+            margin-right: 0;
+        }
+        
+    }
+
+
+/*===========================================================================
+    2.4 LAYOUT GRID SYSTEM
+===========================================================================*/
+
+/********************************************
+    2.4.1 | .row
+********************************************/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/********************************************
+    2.4.2 | .col
+********************************************/
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+

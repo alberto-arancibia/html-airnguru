@@ -1,0 +1,292 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    9. ALERT BUBBLE STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    9.1 - ALERT BUBBLE BASE STYLES
+===========================================================================*/
+
+/********************************************
+    9.1.1 | .alert-bubble
+********************************************/
+
+.alert-bubble {
+    border-radius: 4px;
+    height: 8px;
+    position: absolute;
+    width: 8px;
+}
+#utility-navigation > .dialog-box:nth-child(3) > .alert-bubble {
+    bottom: 0px;
+    right: 9px;
+}
+
+/********************************************
+    9.1.2 | .alert-state
+********************************************/
+
+.alert-state {
+    border-radius: 6px;
+    height: 12px;
+    width: 12px;
+}
+
+/********************************************
+    9.1.3 | .alert-counter
+********************************************/
+
+.alert-counter {
+    border-radius: 8px;
+    font-family: roboto-medium;
+    font-size: 0.9rem; /* FONT SIZE */
+    height: auto;
+    padding: 0px 4px;
+    width: auto;
+}
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .alert-counter {
+        color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .alert-counter {
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    9.2 - ALERT BUBBLE DIRECTION STYLES
+===========================================================================*/
+
+/********************************************
+    9.2.1 | .bottom-left
+********************************************/
+
+.alert-bubble.bottom-left {
+    bottom: -3px;
+    left: -3px;
+}
+
+/********************************************
+    9.2.2 | .bottom-right
+********************************************/
+
+.alert-bubble.bottom-right {
+    bottom: -3px;
+    right: -3px;
+}
+
+/********************************************
+    9.2.3 | .top-left
+********************************************/
+
+.alert-bubble.top-left {
+    left: -3px;
+    top: -3px;
+}
+
+/********************************************
+    9.2.4 | .top-right
+********************************************/
+
+.alert-bubble.top-right {
+    right: -3px;
+    top: -3px;
+}
+
+
+/*===========================================================================
+    9.3 - ALERT BUBBLE COLOR STYLES
+===========================================================================*/
+
+/********************************************
+    9.3.1 | .alert-success
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .alert-success {
+        background-color: #4ADE80; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .alert-success {
+        background-color: #4ADE80; /* DARK MODE */
+    }
+
+/*=========================
+    .alert-state
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .alert-state.alert-success {
+        border: 3.5px solid #DBF9E6; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .alert-state.alert-success {
+        border: 3.5px solid #DBF9E6; /* DARK MODE */
+    }
+
+/********************************************
+    9.3.2 | .alert-danger
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .alert-danger {
+        background-color: #FB7185; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .alert-danger {
+        background-color: #FB7185; /* DARK MODE */
+    }
+
+/*=========================
+    .alert-state
+=========================*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .alert-state.alert-danger {
+        border: 3.5px solid #FEE2E7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .alert-state.alert-danger {
+        border: 3.5px solid #FEE2E7; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    9.4 - ALERT BUBBLE SIZE STYLES
+===========================================================================*/
+
+/********************************************
+    9.4.1 | .button-xs .alert-bubble
+********************************************/
+
+.button-xs .alert-bubble {
+    right: -4px;
+}
+
+/*=========================
+    .alert-bottom
+=========================*/
+
+.button-xs .alert-bubble.alert-bottom {
+    bottom: -3px;
+}
+
+/*=========================
+    .alert-top
+=========================*/
+
+.button-xs .alert-bubble.alert-top {
+    top: -3px;
+}
+
+/********************************************
+    9.4.2 | .button-sm .alert-bubble
+********************************************/
+
+.button-sm .alert-bubble {
+    right: -4px;
+}
+
+/*=========================
+    .alert-bottom
+=========================*/
+
+.button-sm .alert-bubble.alert-bottom {
+    bottom: -3px;
+}
+
+/*=========================
+    .alert-top
+=========================*/
+
+.button-sm .alert-bubble.alert-top {
+    top: -3px;
+}
+
+/********************************************
+    9.4.3 | .button-lg .alert-bubble
+********************************************/
+
+.button-lg .alert-bubble {
+    right: -4px;
+}
+
+/*=========================
+    .alert-bottom
+=========================*/
+
+.button-lg .alert-bubble.alert-bottom {
+    bottom: -3px;
+}
+
+/*=========================
+    .alert-top
+=========================*/
+
+.button-lg .alert-bubble.alert-top {
+    top: -3px;
+}
+
+/********************************************
+    9.4.4 | .button-xl .alert-bubble
+********************************************/
+
+.button-xl .alert-bubble {
+    right: -4px;
+}
+
+/*=========================
+    .alert-bottom
+=========================*/
+
+.button-xl .alert-bubble.alert-bottom {
+    bottom: -3px;
+}
+
+/*=========================
+    .alert-top
+=========================*/
+
+.button-xl .alert-bubble.alert-top {
+    top: -3px;
+}
+

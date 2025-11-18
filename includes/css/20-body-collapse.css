@@ -1,0 +1,143 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    20. BODY COLLAPSE STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    20.1 - BODY COLLAPSE BASE STYLES
+===========================================================================*/
+
+/********************************************
+    20.1.1 | #main-navigation
+********************************************/
+
+body.collapsed #main-navigation {
+    min-width: unset;
+    position: absolute;
+    width: 64px;
+}
+
+/*=========================
+    header
+=========================*/
+
+body.collapsed #main-navigation > header {
+    align-items: center;
+    justify-content: center;
+}
+body.collapsed #main-navigation > header > img:nth-child(1) {
+    display: none;
+}
+body.collapsed #main-navigation > header > img:nth-child(2) {
+    display: block;
+}
+body.collapsed #main-navigation > header > .button-utility {
+    display: none;
+    transform: rotate(180deg);
+}
+
+/*=========================
+    #modules
+=========================*/
+
+body.collapsed #main-navigation .dropdown-panel {
+    display: none;
+}
+body.collapsed #main-navigation .button-nav .button-text {
+    display: none;
+}
+body.collapsed #main-navigation .button-nav > span:nth-child(1) .button-icon {
+    margin: 0;
+}
+body.collapsed #main-navigation .button-nav > span:nth-child(2) {
+    display: none;
+}
+
+/********************************************
+    20.1.2 | main
+********************************************/
+
+body.collapsed main {
+    padding-left: 64px;
+}
+body.collapsed main > aside {
+    margin-left: 64px;
+}
+
+
+/*===========================================================================
+    20.2 - BODY COLLAPSE HOVER STYLES
+===========================================================================*/
+
+/********************************************
+    20.2.1 | #main-navigation:hover
+********************************************/
+
+body.collapsed #main-navigation:hover {
+    width: 250px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode.collapsed #main-navigation:hover {
+        -webkit-box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode.collapsed #main-navigation:hover {
+        -webkit-box-shadow: 0 0 20px 0 rgb(10 10 10 / 50%); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgb(10 10 10 / 50%); /* DARK MODE */
+    }
+
+body.collapsed #main-navigation:hover .button-nav.active::after {
+    border-color: unset;
+    border-style: unset;
+    border-width: unset;
+    height: unset;
+    right: unset;
+    top: unset;
+    width: unset;
+}
+
+/*=========================
+    header
+=========================*/
+
+body.collapsed #main-navigation:hover > header {
+    justify-content: space-between;
+}
+body.collapsed #main-navigation:hover > header > img:nth-child(1) {
+    display: block;
+}
+body.collapsed #main-navigation:hover > header > img:nth-child(2) {
+    display: none;
+}
+body.collapsed #main-navigation:hover > header > .button-utility {
+    display: block;
+}
+
+/*=========================
+    .dropdown
+=========================*/
+
+body.collapsed #main-navigation:hover .dropdown.active .dropdown-panel {
+    display: flex;
+}
+body.collapsed #main-navigation:hover .button-nav .button-text {
+    display: flex;
+}
+body.collapsed #main-navigation:hover .button-nav > span:nth-child(1) .button-icon {
+    margin-right: 10px;
+}
+body.collapsed #main-navigation:hover .button-nav > span:nth-child(2) {
+    display: flex;
+}
+

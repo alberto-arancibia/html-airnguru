@@ -1,0 +1,357 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    5. DIALOG PANEL STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    5.1 - DIALOG PANEL BASE STYLES
+===========================================================================*/
+
+/********************************************
+    5.1.1 | .dialog-box
+********************************************/
+
+.dialog-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/********************************************
+    5.1.2 | .dialog-panel
+********************************************/
+
+.dialog-panel {
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 500000;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-panel {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-panel {
+        background-color: #504E53; /* DARK MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgb(10 10 10 / 50%); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgb(10 10 10 / 50%); /* DARK MODE */
+    }
+
+.dialog-box.active > .dialog-panel {
+    display: flex;
+}
+#airnguru .dialog-panel .separation {
+    margin: auto;
+    width: 100%;
+    z-index: 600;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-panel .separation {
+        border-color: #E5E7EB; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-panel .separation {
+        border-color: #3B393E; /* DARK MODE */
+    }
+
+.dialog-panel > p {
+    font-size: 0.9rem; /* FONT SIZE */
+    padding: 12px;
+    white-space: nowrap;
+}
+.dialog-panel > .save-action {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: flex-start;
+    padding: 0 12px;
+}
+
+/*=========================
+    header
+=========================*/
+
+.dialog-panel > header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    z-index: 500;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-panel > header {
+        border-bottom: 1px solid #DADADA; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-panel > header {
+        border-bottom: 1px solid #DADADA; /* DARK MODE */
+    }
+
+.dialog-panel > header > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    min-height: 36px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-panel > header > div {
+        background-color: #FDFDFD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-panel > header > div {
+        background-color: #424048; /* DARK MODE */
+    }
+
+.dialog-panel > header > div > p {
+    padding: 0 12px;
+}
+#airnguru .dialog-panel > header > div > .button {
+    margin: 0 12px;
+}
+.dialog-panel > header > div.form-group {
+    height: 30px;
+    min-height: 30px;
+}
+#airnguru .dialog-panel > header .input-search {
+    border: unset;
+    border-radius: 8px 8px 0 0;
+    min-width: 100px;
+}
+
+
+/*===========================================================================
+    5.2 - DIALOG PANEL VARIANTS
+===========================================================================*/
+
+/********************************************
+    5.2.1 | .dialog-scroll
+********************************************/
+
+.dialog-scroll {
+    max-height: 220px;
+    overflow: auto;
+}
+
+/********************************************
+    5.2.2 | .dialog-add-row
+********************************************/
+
+.dialog-add-row {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 18px;
+}
+.dialog-add-row > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.dialog-add-row > div:first-child {
+    margin-bottom: 8px;
+}
+.dialog-add-row > div:first-child > input {
+    border: unset;
+    border-radius: 8px;
+    height: 35px;
+    margin: 0 4px;
+    text-indent: 17px;
+    width: 40px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-add-row > div:first-child > input {
+        background-color: #F5F8FA; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-add-row > div:first-child > input {
+        background-color: #302E2F; /* DARK MODE */
+    }
+
+.dialog-add-row > div:last-child > button {
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*===========================================================================
+    5.3 - DIALOG PANEL SIZE STYLES
+===========================================================================*/
+
+/********************************************
+    5.3.1 | .dialog-xs
+********************************************/
+
+.dialog-xs {
+    width: 125px;
+}
+
+/********************************************
+    5.3.2 | .dialog-sm
+********************************************/
+
+.dialog-sm {
+    width: 250px;
+}
+
+/********************************************
+    5.3.3 | .dialog-lg
+********************************************/
+
+.dialog-lg {
+    width: 500px;
+}
+
+/********************************************
+    5.3.4 | .dialog-xl
+********************************************/
+
+.dialog-xl {
+    width: 750px;
+}
+
+/********************************************
+    5.3.5 | .dialog-auto
+********************************************/
+
+.dialog-auto {
+    width: auto;
+}
+
+
+/*===========================================================================
+    5.4 - DIALOG PANEL DIRECTION STYLES
+===========================================================================*/
+
+/********************************************
+    5.4.1 | .bottom-left
+********************************************/
+
+.dialog-panel.bottom-left {
+    left: 0;
+    margin-top: 4px;
+    top: 100%;
+}
+
+/********************************************
+    5.4.2 | .bottom-right
+********************************************/
+
+.dialog-panel.bottom-right {
+    margin-top: 4px;
+    right: 0;
+    top: 100%;
+}
+
+/********************************************
+    5.4.3 | .left-bottom
+********************************************/
+
+.dialog-panel.left-bottom {
+    bottom: 0;
+    margin-right: 4px;
+    right: 100%;
+}
+
+/********************************************
+    5.4.4 | .left-top
+********************************************/
+
+.dialog-panel.left-top {
+    margin-right: 4px;
+    right: 100%;
+    top: 0;
+}
+
+/********************************************
+    5.4.5 | .right-bottom
+********************************************/
+
+.dialog-panel.right-bottom {
+    bottom: 0;
+    left: 100%;
+    margin-left: 4px;
+}
+
+/********************************************
+    5.4.6 | .right-top
+********************************************/
+
+.dialog-panel.right-top {
+    left: 100%;
+    margin-left: 4px;
+    top: 0;
+}
+
+/********************************************
+    5.4.7 | .top-left
+********************************************/
+
+.dialog-panel.top-left {
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 4px;
+}
+
+/********************************************
+    5.4.8 | .top-right
+********************************************/
+
+.dialog-panel.top-right {
+    bottom: 100%;
+    margin-bottom: 4px;
+    right: 0;
+}
+

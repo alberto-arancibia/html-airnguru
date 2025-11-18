@@ -1,0 +1,224 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    22. FONT STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    22.1 - FONT BASE STYLES
+===========================================================================*/
+
+/********************************************
+    22.1.1 | .text-info
+********************************************/
+
+.text-info {
+    font-size: 0.923rem; /* FONT SIZE */
+}
+
+
+/*===========================================================================
+    22.2 - FONT COLOR STYLES
+===========================================================================*/
+
+/********************************************
+    22.2.1 | .text-primary
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .text-primary {
+        color: #008FF7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .text-primary {
+        color: #FFE681; /* DARK MODE */
+    }
+
+/********************************************
+    22.2.2 | .text-secondary
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .text-secondary {
+        color: #637282; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .text-secondary {
+        color: #E2D7D7; /* DARK MODE */
+    }
+
+/********************************************
+    22.2.3 | .text-success
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .text-success {
+        color: #15803D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .text-success {
+        color: #93F297; /* DARK MODE */
+    }
+
+/********************************************
+    22.2.4 | .text-danger
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .text-danger {
+        color: #F1416C; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .text-danger {
+        color: #FB7185; /* DARK MODE */
+    }
+
+/********************************************
+    22.2.5 | .text-warning
+********************************************/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .text-warning {
+        color: #FFA800; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .text-warning {
+        color: #EABC25; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    22.3 - FONT FACE STYLES
+===========================================================================*/
+
+/********************************************
+    22.3.1 | Roboto
+********************************************/
+
+@font-face {
+    font-family: 'roboto-black';
+    src: url('../fonts/roboto/roboto-black.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-black-italic';
+    src: url('../fonts/roboto/roboto-black-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../fonts/roboto/roboto-bold.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-bold-condensed';
+    src: url('../fonts/roboto/roboto-bold-condensed.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-bold-condensed-italic';
+    src: url('../fonts/roboto/roboto-bold-condensed-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-bold-italic';
+    src: url('../fonts/roboto/roboto-bold-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-condensed';
+    src: url('../fonts/roboto/roboto-condensed.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-condensed-italic';
+    src: url('../fonts/roboto/roboto-condensed-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-italic';
+    src: url('../fonts/roboto/roboto-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-light';
+    src: url('../fonts/roboto/roboto-light.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-light-italic';
+    src: url('../fonts/roboto/roboto-light-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('../fonts/roboto/roboto-medium.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-medium-italic';
+    src: url('../fonts/roboto/roboto-medium-italic.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../fonts/roboto/roboto-regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('../fonts/roboto/roboto-thin.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-thin-italic';
+    src: url('../fonts/roboto/roboto-thin-italic.ttf');
+    font-weight: normal;
+}
+
+/********************************************
+    22.3.2 | Consolas
+********************************************/
+
+@font-face {
+    font-family: 'consola';
+    src: url('../fonts/consolas/consola.ttf');
+    font-weight: normal;
+}
+

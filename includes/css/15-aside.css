@@ -1,0 +1,1299 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    15. ASIDE STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    15.1 - ASIDE BASE STYLES
+===========================================================================*/
+
+/********************************************
+    15.1.1 | aside
+********************************************/
+
+aside {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-width: fit-content;
+    overflow: auto;
+    position: relative;
+    width: auto;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode aside {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border-left: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode aside {
+        background-color: #504E53; /* DARK MODE */
+        border-left: 1px solid #424245; /* DARK MODE */
+    }
+
+main > aside {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 5555555555;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode main > aside {
+        -webkit-box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode main > aside {
+        -webkit-box-shadow: 0 0 20px 0 rgba(10, 10, 10, 0.5); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgba(10, 10 ,10, 0.5); /* DARK MODE */
+    }
+
+aside > section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+}
+
+/********************************************
+    15.1.2 | aside > header
+********************************************/
+
+aside > section > header {
+    display: flex;
+    flex-direction: column;
+}
+aside > section > header > .row {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/********************************************
+    15.1.3 | .panel-body
+********************************************/
+
+aside .panel-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+aside fieldset > .fieldset-body {
+    padding: 14px 18px;
+}
+aside form > .display-form-main-actions {
+    bottom: 0;
+    height: 50px;
+    padding: 0 18px;
+    position: sticky;
+    z-index: 50000;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode aside form > .display-form-main-actions {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border-top: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode aside form > .display-form-main-actions {
+        background-color: #504E53; /* DARK MODE */
+        border-top: 1px solid #D2D3D7; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    15.2 - ASIDE VARIANTS
+===========================================================================*/
+
+/********************************************
+    15.2.1 | #panel-alerts
+********************************************/
+
+#panel-alerts {
+    min-width: 600px;
+    width: 600px;
+}
+#panel-alerts > .panel-body  {
+    padding: 0 16px;
+}
+#panel-alerts .display-actions .form-group .input-search {
+    height: 28px;
+}
+#panel-alerts .display-table {
+    flex-grow: 1;
+}
+#panel-alerts .placeholder-table-container {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.2 | #panel-fare-verification
+********************************************/
+
+#panel-fare-verification {
+    min-width: 312px;
+    width: 312px;
+}
+#panel-fare-verification > header > .row:nth-child(2) {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-fare-verification > header > .row:nth-child(2) {
+        background-color: #FAFAFA; /* LIGHT MODE */
+        border-bottom: 1px solid #E6E7E9; /* LIGHT MODE */
+        border-top: 1px solid #E6E7E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-fare-verification > header > .row:nth-child(2) {
+        background-color: #424048; /* DARK MODE */
+        border-bottom: 1px solid #262626; /* DARK MODE */
+        border-top: 1px solid #262626; /* DARK MODE */
+    }
+
+/********************************************
+    15.2.3 | #panel-edit-workspace
+********************************************/
+
+#panel-edit-workspace {
+    min-width: 334px;
+    width: 334px;
+}
+#panel-edit-workspace > .panel-body > form {
+    padding-bottom: 56px;
+}
+#panel-edit-workspace > .panel-body > form > fieldset:nth-child(1) {
+    flex-grow: unset;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-edit-workspace form > fieldset {
+        border-top: 1px solid #DCE0E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-edit-workspace form > fieldset {
+        border-top: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#panel-edit-workspace form > fieldset > .fieldset-body {
+    padding: 8px 18px;
+}
+#panel-edit-workspace > .panel-body > form > .display-form-main-actions {
+    position: absolute;
+}
+
+/********************************************
+    15.2.4 | #panel-add-ons
+********************************************/
+
+#panel-add-ons {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-add-ons > .panel-body  {
+    padding: 0 16px;
+}
+#panel-add-ons .display-table {
+    flex-grow: 1;
+}
+#panel-add-ons .placeholder-table-container {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.5 | #panel-footnotes
+********************************************/
+
+#panel-footnotes {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-footnotes > .panel-body  {
+    padding: 0 16px;
+}
+#panel-footnotes .display-table {
+    flex-grow: 1;
+}
+#panel-footnotes .placeholder-table-container {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.6 | #panel-pivot-view
+********************************************/
+
+#panel-pivot-view {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-pivot-view > .panel-body  {
+    padding: 0 16px;
+}
+#panel-pivot-view .display-table {
+    flex-grow: 1;
+}
+#panel-pivot-view .placeholder-table-container {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.7 | #panel-team-member
+********************************************/
+
+#panel-team-member {
+    min-width: 360px;
+    width: 360px;
+}
+#panel-team-member > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-team-member > .panel-body  {
+    padding: 12px 16px;
+}
+#panel-team-member > .panel-body > .row:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+#panel-team-member h3 {
+    font-family: roboto-bold;
+    font-size: 1rem; /* FONT SIZE */
+    margin-bottom: 2px;
+}
+
+/********************************************
+    15.2.8 | #panel-attachments
+********************************************/
+
+#panel-attachments {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-attachments > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-attachments > .panel-body  {
+    padding: 12px 16px;
+}
+#panel-attachments > .panel-body > .row:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+/********************************************
+    15.2.9 | .element-attachment
+********************************************/
+
+.element-attachment {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 8px 14px;
+}
+.element-attachment > div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.element-attachment > div:first-child > div:first-child {
+    margin-bottom: 1px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .element-attachment > div:first-child .text-info {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .element-attachment > div:first-child .text-info {
+        color: #C2CEE2; /* DARK MODE */
+    }
+
+.element-attachment > div:last-child {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+}
+.element-attachment > div:last-child > *:not(:last-child) {
+    margin-right: 4px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .element-attachment:not(:last-of-type) {
+        border-bottom: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .element-attachment:not(:last-of-type) {
+        border-bottom: 1px solid #DDDDDD; /* DARK MODE */
+    }
+
+/********************************************
+    15.2.10 | #panel-validation
+********************************************/
+
+#panel-validation {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-validation > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-validation > .panel-body > .row {
+    margin-bottom: 12px;
+    padding: 0 18px;
+}
+#airnguru #panel-validation .display-tab-nav {
+    margin: 5px 0;
+}
+#airnguru #panel-validation .panel-primary-actions {
+    margin-bottom: 18px;
+}
+#panel-validation > .panel-body > .panel-primary-actions > .col {
+    flex-direction: row;
+}
+#panel-validation > .panel-body > .panel-primary-actions > .col > *:not(:last-child) {
+    margin-right: 4px;
+}
+#panel-validation > .panel-body > .panel-primary-actions > .col > .form-group:nth-child(1) {
+    max-width: 110px;
+}
+#panel-validation > .panel-body > .panel-primary-actions > .col > .form-group:nth-child(2) {
+    flex-grow: 1;
+}
+#panel-validation > .panel-body > .panel-secondary-actions {
+    margin-top: -6px;
+}
+#panel-validation > .panel-body > .panel-secondary-actions > .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#panel-validation > .panel-body > .display-form-main-actions {
+    bottom: 0;
+    height: 50px;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 50000;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-validation > .panel-body > .display-form-main-actions {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border-top: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-validation > .panel-body > .display-form-main-actions {
+        background-color: #504E53; /* DARK MODE */
+        border-top: 1px solid #D2D3D7; /* DARK MODE */
+    }
+
+/*=========================
+    .status-container
+=========================*/
+
+.status-container > h3 {
+    font-family: 'roboto-condensed';
+    font-size: 1.08rem; /* FONT SIZE */
+    margin-bottom: 8px;
+}
+
+/*-------------------------
+    .status-element
+-------------------------*/
+
+.status-element {
+    display: flex;
+    flex-direction: column;
+}
+.status-element:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+.status-approved {
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -22px;
+    padding: 6px 20px 26px 20px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .status-approved {
+        background-color: #F8FAFF; /* LIGHT MODE */
+        border: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .status-approved {
+        background-color: #F8FAFF; /* DARK MODE */
+        border: 1px solid #DDDDDD; /* DARK MODE */
+    }
+
+.status-approved > span {
+    font-family: 'roboto-condensed';
+}
+.status-content {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .status-content {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .status-content {
+        background-color: #FFFFFF; /* DARK MODE */
+        border: 1px solid #DDDDDD; /* DARK MODE */
+    }
+
+.status-body {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px;
+}
+.status-body > div:nth-child(1) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.status-body h4 {
+    font-family: 'roboto-condensed';
+    font-size: 1.15rem; /* FONT SIZE */
+}
+.status-quantity {
+    border-radius: 3px;
+    font-family: roboto-medium;
+    font-size: 0.9rem; /* FONT SIZE */
+    height: auto;
+    margin-left: 6px;
+    padding: 3px 5px;
+    width: auto;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .status-quantity {
+        background-color: #EAEAEA; /* LIGHT MODE */
+        color: #666666; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .status-quantity {
+        background-color: #EAEAEA; /* DARK MODE */
+        color: #666666; /* DARK MODE */
+    }
+
+.status-footer {
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .status-footer {
+        background-color: #F8FAFF; /* LIGHT MODE */
+        border-top: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .status-footer {
+        background-color: #F8FAFF; /* DARK MODE */
+        border-top: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+.status-rows {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/********************************************
+    15.2.11 | #panel-statistics
+********************************************/
+
+#panel-statistics {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-statistics > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-statistics > .panel-body  {
+    padding: 14px 18px;
+}
+#airnguru #panel-statistics > .panel-body > .panel-primary-actions {
+    margin-bottom: 8px;
+}
+#panel-statistics > .panel-body > .row:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+#panel-statistics .panel-primary-actions .input-select {
+    background-position: right 8px center;
+    height: 28px;
+    max-width: 56px;
+    text-indent: 8px;
+}
+
+/*=========================
+    #stats-summary
+=========================*/
+
+#stats-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+#stats-summary > div {
+    display: flex;
+    flex-direction: row;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #stats-summary > div:not(:last-child) {
+        border-bottom: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #stats-summary > div:not(:last-child) {
+        border-bottom: 1px solid #DDDDDD; /* DARK MODE */
+    }
+
+#stats-summary > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 14px;
+    width: 50%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #stats-summary > div > div:not(:last-child) {
+        border-right: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode #stats-summary > div > div:not(:last-child) {
+        border-right: 1px solid #DDDDDD; /* DARK MODE */
+    }
+
+#stats-summary > div > div > div:first-child {
+    margin-bottom: 2px;
+}
+#stats-summary h4 {
+    font-family: 'roboto-bold-condensed';
+    font-size: 1rem; /* FONT SIZE */
+}
+#stats-summary > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),
+#stats-summary > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+#stats-summary > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div,
+#stats-summary > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 22px;
+    padding: 0 8px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #stats-summary > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div {
+        background-color: #FEF2F2; /* LIGHT MODE */
+        color: #B91C1C; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #stats-summary > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div {
+        background-color: #FEF2F2; /* DARK MODE */
+        color: #B91C1C; /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #stats-summary > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div {
+        background-color: #F0FDF4; /* LIGHT MODE */
+        color: #15803D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #stats-summary > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div {
+        background-color: #F0FDF4; /* DARK MODE */
+        color: #15803D; /* DARK MODE */
+    }
+
+#stats-summary > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div > span,
+#stats-summary > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div > span {
+    font-family: 'roboto-condensed';
+    font-size: 0.93rem; /* FONT SIZE */
+    margin-left: 6px;
+}
+
+/********************************************
+    15.2.12 | #panel-transition
+********************************************/
+
+#panel-transition {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-transition > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-transition > .panel-body > .row  {
+    padding: 0 18px;
+}
+#panel-transition .display-tab-nav {
+    margin: 5px 0;
+}
+#panel-transition .disclaimer-message {
+    margin-top: 6px;
+}
+#panel-transition .display-table {
+    flex-grow: 1;
+    margin-bottom: 12px;
+}
+#panel-transition .display-form-main-actions {
+    bottom: 0;
+    height: 50px;
+    position: sticky;
+    z-index: 50000;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition .display-form-main-actions {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border-top: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition .display-form-main-actions {
+        background-color: #504E53; /* DARK MODE */
+        border-top: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+/*=========================
+    #panel-transition table
+=========================*/
+
+#panel-transition table {
+    border-radius: 8px;
+    border-spacing: 0px;
+    height: auto;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition table {
+        border: 1px solid #E6E7E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition table {
+        border: 1px solid #3B393E; /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition thead {
+        background-color: #F9FAFB; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition thead {
+        background-color: #F9FAFB; /* DARK MODE */
+    }
+
+#panel-transition th {
+    height: 30px;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition th {
+        background-color: #F9FAFB; /* LIGHT MODE */
+        border-bottom: 1px solid #E6E7E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition th {
+        background-color: #313444; /* DARK MODE */
+        border-bottom: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#panel-transition thead > tr > th:nth-child(1),
+#panel-transition thead > tr > th:nth-child(2) {
+    text-align: start;
+}
+#panel-transition thead > tr > th:nth-child(3) {
+    text-align: center;
+}
+#panel-transition td {
+    height: 50px;
+    padding: 0 10px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition td {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition td {
+        background-color: #504E53; /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-transition tbody > tr:not(:last-of-type) > td {
+        border-bottom: 1px solid #E6E7E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-transition tbody > tr:not(:last-of-type) > td {
+        border-bottom: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#panel-transition tbody > tr > td:nth-child(1),
+#panel-transition tbody > tr > td:nth-child(2) {
+    text-align: start;
+}
+#panel-transition tbody > tr > td:nth-child(3) {
+    text-align: center;
+}
+#panel-transition tbody > tr > td:nth-child(1) > svg {
+    float: right;
+    margin-right: 4px;
+}
+#panel-transition tbody > tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}
+#panel-transition tbody > tr:last-child td:last-child {
+    border-radius: 0 0 8px 0;
+}
+
+/********************************************
+    15.2.13 | #panel-re-quote
+********************************************/
+
+#panel-re-quote {
+    max-width: 450px;
+    width: auto;
+}
+
+/*=========================
+    .form-group
+=========================*/
+
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(5) .form-group,
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(8) .form-group  {
+    flex-direction: row;
+}
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(5) .title-group,
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(8) .title-group  {
+    margin-right: 6px;
+}
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(5) .input-group,
+#panel-re-quote form > fieldset > .fieldset-body > .row:nth-child(8) .input-group  {
+    max-width: 130px;
+}
+#panel-re-quote .placeholder-table-container {
+    height: unset;
+    max-width: 368px;
+    min-height: unset;
+}
+
+/********************************************
+    15.2.14 | #query-build
+********************************************/
+
+#query-build {
+    min-width: 354px;
+    width: 354px;
+}
+body > aside > #query-build {
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    z-index: 5555555555555555;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    body#light-mode > aside > #query-build {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    body#dark-mode > aside > #query-build {
+        background-color: #504E53; /* DARK MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgba(10, 10, 10, 0.5); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgba(10, 10 ,10, 0.5); /* DARK MODE */
+    }
+
+#query-build .fieldset-body > .row > .col > .disclaimer-message {
+    margin-top: 6px;
+}
+
+/********************************************
+    15.2.15 | #query-review
+********************************************/
+
+#query-review {
+    min-width: 334px;
+    width: 334px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #query-review {
+        border-left: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #query-review {
+        border-left: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#query-review > .panel-body  {
+    padding: 12px 18px;
+}
+#query-review > .panel-body > .row:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+#query-review > .panel-body h4 {
+    font-family: 'roboto-bold-condensed';
+    font-size: 0.923rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+/********************************************
+    15.2.16 | #change-type-details
+********************************************/
+
+#change-type-details {
+    min-width: 334px;
+    width: 334px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #change-type-details {
+        border-left: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #change-type-details {
+        border-left: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#change-type-details > .panel-body {
+    overflow: auto;
+}
+#change-type-details > .panel-body > form {
+    overflow: auto;
+}
+#change-type-details > .panel-body > form > fieldset:nth-child(1) {
+    flex-grow: unset;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #change-type-details form > fieldset {
+        border-top: 1px solid #DCE0E9; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #change-type-details form > fieldset {
+        border-top: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#change-type-details form > fieldset > .fieldset-body {
+    padding: 8px 18px;
+}
+
+/********************************************
+    15.2.17 | #background-query-history
+********************************************/
+
+#background-query-history {
+    min-width: 600px;
+    width: 600px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #background-query-history {
+        border-left: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #background-query-history {
+        border-left: 1px solid #3B393E; /* DARK MODE */
+    }
+
+#background-query-history > .panel-body  {
+    padding: 0 18px 6px 18px;
+}
+#background-query-history .display-table {
+    flex-grow: 1;
+}
+#background-query-history .placeholder-table-container {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.18 | #request-history
+********************************************/
+
+#request-history {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    min-width: 280px;
+    position: absolute;
+    top: 0;
+    width: 280px;
+    z-index: 555555;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #request-history {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #request-history {
+        background-color: #FFFFFF; /* DARK MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgba(99, 114, 130, 0.5); /* DARK MODE */
+    }
+
+#request-history > header  {
+    padding: 0 18px;
+}
+#request-history > .panel-body  {
+    padding: 12px 18px;
+}
+#request-history > .panel-body > .row:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+#request-history > .panel-body > .row:not(:last-of-type) > .col {
+    padding-bottom: 16px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #request-history > .panel-body > .row:not(:last-of-type) > .col {
+        border-bottom: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #request-history > .panel-body > .row:not(:last-of-type) > .col {
+        border-bottom: 1px solid #D2D3D7; /* DARK MODE */
+    }
+
+#request-history > .panel-body > .row > .col > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#request-history > .panel-body > .row > .col > div:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+#request-history > .panel-body > .row > .col > div > span {
+    display: flex;
+    flex-direction: row;
+}
+#request-history > .panel-body > .row > .col > div > span:nth-child(1) {
+    margin-right: 8px;
+}
+#request-history > .panel-body > .row > .col > div > span:nth-child(3) {
+    margin-left: 12px;
+    margin-right: 8px;
+}
+#request-history > .panel-body h4 {
+    font-family: 'roboto-bold-condensed';
+    font-size: 0.923rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+/********************************************
+    15.2.19 | #panel-attachment-table
+********************************************/
+
+#panel-attachment-table {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-attachment-table > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-attachment-table > .panel-body {
+    padding: 12px 18px 0 18px;
+}
+#panel-attachment-table .display-table {
+    flex-grow: 1;
+}
+
+/********************************************
+    15.2.20 | #panel-attachment-comment
+********************************************/
+
+#panel-attachment-comment {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-attachment-comment > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-attachment-comment > .panel-body p {
+    padding: 12px 18px;
+    text-align: justify;
+}
+#panel-attachment-comment .fieldset-body,
+#panel-attachment-comment .fieldset-body > .row {
+    flex-grow: 1;
+}
+#panel-attachment-comment textarea {
+    height: 100%;
+}
+
+/********************************************
+    15.2.21 | #panel-attachment-files
+********************************************/
+
+#panel-attachment-files {
+    min-width: 400px;
+    width: 400px;
+}
+#panel-attachment-files > header > .row:nth-child(2) > .col {
+    display: flex;
+    flex-direction: row;
+}
+#panel-attachment-files .panel-body > .row {
+    padding: 0 18px;
+}
+#panel-attachment-files .panel-body > .row:first-child {
+    margin-top: 12px;
+}
+#panel-attachment-files .panel-body > .row:last-child {
+    margin-bottom: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #panel-attachment-files .panel-body > .row:not(:last-of-type) > .col {
+        border-bottom: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #panel-attachment-files .panel-body > .row:not(:last-of-type) > .col {
+        border-bottom: 1px solid #D2D3D7; /* DARK MODE */
+    }
+

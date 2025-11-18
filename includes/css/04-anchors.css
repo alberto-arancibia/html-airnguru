@@ -1,0 +1,143 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    4. ANCHOR STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    4.1 - ANCHOR BASE STYLES
+===========================================================================*/
+
+/********************************************
+    4.1.1 | a
+********************************************/
+
+a {
+    transition: all 0.35s ease-in-out 0s;
+}
+
+
+/*===========================================================================
+    4.2 - ANCHOR COLOR STYLES
+===========================================================================*/
+
+/********************************************
+    4.2.1 | .link-primary
+********************************************/
+
+.link-primary {
+   font-size: 1rem; /* FONT SIZE */
+}
+
+/*-------------------------
+    Focus State
+-------------------------*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+   #light-mode .link-primary,
+   #light-mode .link-primary:focus,
+   #light-mode .link-primary:link,
+   #light-mode .link-primary:visited {
+      color: #0865FE; /* ACCENT COLOR */
+   }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+   #dark-mode .link-primary,
+   #dark-mode .link-primary:focus,
+   #dark-mode .link-primary:link,
+   #dark-mode .link-primary:visited {
+      color: #FFE681; /* ACCENT COLOR */
+   }
+
+/*-------------------------
+    Active & Hover State
+-------------------------*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+   #light-mode .link-primary:hover,
+   #light-mode .link-primary:active {
+      color: #637282; /* ACCENT COLOR */
+   }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+   #dark-mode .link-primary:hover,
+   #dark-mode .link-primary:active {
+      color: #ADB0B5; /* ACCENT COLOR */
+   }
+
+/********************************************
+    4.2.2 | .link-secondary
+********************************************/
+
+.link-secondary {
+   font-size: 1rem; /* FONT SIZE */
+}
+
+/*-------------------------
+    Focus State
+-------------------------*/
+
+.link-secondary,
+.link-secondary:focus,
+.link-secondary:link,
+.link-secondary:visited {
+   text-decoration: underline;
+}
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+   #light-mode .link-secondary,
+   #light-mode .link-secondary:focus,
+   #light-mode .link-secondary:link,
+   #light-mode .link-secondary:visited {
+      color: #404756; /* LIGHT MODE */
+   }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+   #dark-mode .link-secondary,
+   #dark-mode .link-secondary:focus,
+   #dark-mode .link-secondary:link,
+   #dark-mode .link-secondary:visited {
+      color: #FFFFFF; /* DARK MODE */
+   }
+
+/*-------------------------
+    Active & Hover State
+-------------------------*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+   #light-mode .link-secondary:hover,
+   #light-mode .link-secondary:active {
+      color: #008FF7; /* LIGHT MODE */
+   }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+   #dark-mode .link-secondary:hover,
+   #dark-mode .link-secondary:active {
+      color: #FFE681; /* DARK MODE */
+   }
+

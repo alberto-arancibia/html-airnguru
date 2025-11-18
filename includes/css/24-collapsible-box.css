@@ -1,0 +1,59 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    24. COLLAPSIBLE BOX STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    24.1 - COLLAPSIBLE BOX BASE STYLES
+===========================================================================*/
+
+/********************************************
+    24.1.1 | .collapsible-box
+********************************************/
+
+.collapsible-box {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .collapsible-box {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border: 1px solid #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .collapsible-box {
+        background-color: #504E53; /* DARK MODE */
+        border: 1px solid #3B393E; /* DARK MODE */
+    }
+
+/********************************************
+    24.1.2 | .collapsible-box > header
+********************************************/
+
+.collapsible-box > header {
+    display: flex;
+    flex-direction: column;
+}
+
+/********************************************
+    24.1.3 | .collapsible-box-body
+********************************************/
+
+.collapsible-box-body {
+    display: flex;
+    flex-direction: column;
+}
+

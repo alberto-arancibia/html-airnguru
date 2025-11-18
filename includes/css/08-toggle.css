@@ -1,0 +1,98 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    8. TOGGLE STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    8.1 - TOGGLE BASE STYLES
+===========================================================================*/
+
+/********************************************
+    8.1.1 | .toggle
+********************************************/
+
+.toggle {
+    border-radius: 25px;
+    cursor: pointer;
+    height: 16px;
+    position: relative;
+    transition: all 0.35s ease-in-out 0s;
+    width: 29px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .toggle {
+        background-color: #D5D7D8; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .toggle {
+        background-color: #D5D7D8; /* DARK MODE */
+    }
+
+/*-------------------------
+    Active State
+-------------------------*/
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .toggle.active {
+        background-color: #008FF7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .toggle.active {
+        background-color: #FFE681; /* DARK MODE */
+    }
+
+/********************************************
+    8.1.2 | .switch
+********************************************/
+
+.switch {
+    border-radius: 25px;
+    height: 10px;
+    left: 0;
+    margin: 3px;
+    position: absolute;
+    width: 10px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .switch {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .switch {
+        background-color: #514E4E; /* DARK MODE */
+    }
+
+/*-------------------------
+    Active State
+-------------------------*/
+
+.toggle.active .switch {
+    left: unset;
+    right: 0;
+}
+

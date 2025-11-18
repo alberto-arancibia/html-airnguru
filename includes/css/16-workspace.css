@@ -1,0 +1,168 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    16. WORKSPACE STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    16.1 - WORKSPACE BASE STYLES
+===========================================================================*/
+
+/********************************************
+    16.1.1 | #workspace
+********************************************/
+
+#workspace {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    min-height: 400px;
+}
+
+/********************************************
+    16.1.2 | #workspace-header
+********************************************/
+
+#workspace-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 0px 12px;
+    position: relative;
+    width: 100%;
+}
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #workspace-header {
+        background-color: rgba(52, 73, 94, 0.9); /* LIGHT MODE */
+    }
+    #light-mode #workspace-header .button {
+        color: #FFFFFF; /* LIGHT MODE */
+    }
+    #light-mode #workspace-header .button:hover,
+    #light-mode #workspace-header .button:focus,
+    #light-mode #workspace-header .button:active {
+        color: rgba(255, 255, 255, 0.85); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #workspace-header {
+        background-color: rgba(52, 73, 94, 0.9); /* DARK MODE */
+    }
+    #dark-mode #workspace-header .button {
+        color: #FFFFFF; /* DARK MODE */
+    }
+    #dark-mode #workspace-header .button:hover,
+    #dark-mode #workspace-header .button:focus,
+    #dark-mode #workspace-header .button:active {
+        color: rgba(255, 255, 255, 0.85); /* DARK MODE */
+    }
+
+#workspace-header > div {
+    display: flex;
+    flex-direction: row;
+}
+
+/*=========================
+    #handler
+=========================*/
+
+#handler {
+    border-radius: 20px;
+    cursor: ns-resize;
+    height: 3px;
+    position: absolute;
+    right: calc(50% - 15px);
+    top: 4px;
+    width: 30px;
+}
+    
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #handler {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #handler {
+        background-color: #FFFFFF; /* DARK MODE */
+    }
+
+/********************************************
+    16.1.3 | #workspace-body
+********************************************/
+
+#workspace-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    padding: 0px 12px;
+    position: relative;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode #workspace-body {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border-left: 1px solid #F0F0F0; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode #workspace-body {
+        background-color: #504E53; /* DARK MODE */
+        border-left: 1px solid #424245; /* DARK MODE */
+    }
+
+/*=========================
+    .button-group
+=========================*/
+
+#workspace .display-actions .button-group > button:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+}
+#workspace .display-actions .button-group > button:nth-child(2) {
+    border-radius: 0 6px 6px 0;
+}
+
+/*=========================
+    .simulation
+=========================*/
+
+.simulation {
+    align-items: center;
+    border: 1px solid #D2D3D7;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    height: 32px;
+    padding: 0 8px;
+}
+.simulation.disabled {
+    opacity: 0.6;
+}
+.simulation.disabled > div {
+    cursor: not-allowed;
+}
+

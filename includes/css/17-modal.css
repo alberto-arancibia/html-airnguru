@@ -1,0 +1,416 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    17. MODAL STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    17.1 - MODAL BASE STYLES
+===========================================================================*/
+
+/********************************************
+    17.1.1 | .modal
+********************************************/
+
+.modal {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 80px;
+    padding: 0;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .modal {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+        box-shadow: 0 0 20px 0 rgb(99 114 130 / 50%); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .modal {
+        background-color: #504E53; /* DARK MODE */
+        -webkit-box-shadow: 0 0 20px 0 rgba(10, 10, 10, 0.5); /* DARK MODE */
+        box-shadow: 0 0 20px 0 rgba(10, 10 ,10, 0.5); /* DARK MODE */
+    }
+
+/********************************************
+    17.1.2 | .modal > header
+********************************************/
+
+.modal > header {
+    display: flex;
+    flex-direction: column;
+}
+.modal > header > .row {
+    padding: 0 18px;
+}
+
+/*=========================
+    .display-title
+=========================*/
+
+.modal > header > .display-title {
+    border-radius: 8px 8px 0 0;
+}
+
+/********************************************
+    17.1.3 | .modal > .modal-body
+********************************************/
+
+.modal > .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px;
+}
+.modal > .modal-body > .row:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+.modal form > .display-form-main-actions {
+    padding-top: 12px;
+}
+
+
+/*===========================================================================
+    17.2 - MODAL SIZE STYLES
+===========================================================================*/
+
+/********************************************
+    17.2.1 | .modal-xs
+********************************************/
+
+.modal-xs {
+    max-width: 350px;
+    min-width: 350px;
+}
+
+/********************************************
+    17.2.2 | .modal-sm
+********************************************/
+
+.modal-sm {
+    max-width: 500px;
+    min-width: 500px;
+}
+
+/********************************************
+    17.2.3 | .modal-lg
+********************************************/
+
+.modal-lg {
+    max-width: 750px;
+    min-width: 750px;
+}
+
+/********************************************
+    17.2.4 | .modal-xl
+********************************************/
+
+.modal-xl {
+    max-width: 1000px;
+    min-width: 1000px;
+}
+
+
+/*===========================================================================
+    17.3 - COLOR CUSTOMIZATION STYLES
+===========================================================================*/
+
+/********************************************
+    17.3.1 | #color-customization-modal
+********************************************/
+
+#color-customization-modal {
+    width: 1000px;
+}
+#color-customization-modal .display-actions > div:first-child > *:first-child {
+    padding-left: 10px;
+}
+#color-customization-modal .display-table {
+    height: 350px;
+}
+#color-customization-modal .custom-table > tbody > tr > td:nth-child(1) {
+    max-width: 22px;
+}
+#color-customization-modal .custom-table > tbody > tr > td:nth-child(3) {
+    max-width: 58px;
+}
+#color-customization-modal .custom-table > tbody > tr > td:nth-child(6) {
+    width: 36px;
+}
+#color-customization-modal .custom-table > tbody > tr > td:nth-child(7) {
+    width: 36px;
+}
+#color-customization-modal .custom-table > tbody > tr > td:nth-child(8) > button {
+    float: right;
+}
+#color-customization-modal .color-sample {
+    align-items: center;
+    background-color: #8CD5CA;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+#color-customization-modal .display-main-actions > .col:nth-child(1) > *:not(:last-child) {
+    margin-right: 6px;
+}
+#color-customization-modal .display-main-actions > .col:nth-child(2) > *:not(:last-child) {
+    margin-right: 6px;
+}
+#color-palette .dialog-panel {
+    padding: 15px;
+}
+#color-palette .dialog-panel > div {
+    display: flex;
+    flex-direction: row;
+}
+#color-palette .dialog-panel > div:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+#color-palette .dialog-panel > div > button:not(:last-of-type) {
+    margin-right: 4px;
+}
+.color-palette-button {
+    align-items: center;
+    border: unset;
+    border-radius: 6px;
+    justify-content: center;
+    padding: 6px;
+}
+.color-1 {
+    background-color: #FFFFFF;
+    color: #231F20;
+}
+.color-2 {
+    background-color: #FFFFFF;
+    color: #AAAAAA;
+}
+.color-3 {
+    background-color: #FFFFFF;
+    color: #008C78;
+}
+.color-4 {
+    background-color: #FFFFFF;
+    color: #5DC1B4;
+}
+.color-5 {
+    background-color: #FFFFFF;
+    color: #E78400;
+}
+.color-6 {
+    background-color: #FFFFFF;
+    color: #FFB95F;
+}
+.color-7 {
+    background-color: #FFFFFF;
+    color: #D60345;
+}
+.color-8 {
+    background-color: #FFFFFF;
+    color: #FF74A1;
+}
+.color-9 {
+    background-color: #EDEDED;
+    color: #231F20;
+}
+.color-10 {
+    background-color: #D3D3D3;
+    color: #231F20;
+}
+.color-11 {
+    background-color: #AAAAAA;
+    color: #231F20;
+}
+.color-12 {
+    background-color: #888888;
+    color: #231F20;
+}
+.color-13 {
+    background-color: #535353;
+    color: #FFFFFF;
+}
+.color-14 {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+}
+.color-15 {
+    background-color: #212121;
+    color: #FFFFFF;
+}
+.color-16 {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.color-17 {
+    background-color: #DFDEFE;
+    color: #231F20;
+}
+.color-18 {
+    background-color: #C1BDFE;
+    color: #231F20;
+}
+.color-19 {
+    background-color: #938DFA;
+    color: #231F20;
+}
+.color-20 {
+    background-color: #756CFA;
+    color: #231F20;
+}
+.color-21 {
+    background-color: #483ECD;
+    color: #FFFFFF;
+}
+.color-22 {
+    background-color: #3831A1;
+    color: #FFFFFF;
+}
+.color-23 {
+    background-color: #292372;
+    color: #FFFFFF;
+}
+.color-24 {
+    background-color: #1F1C5D;
+    color: #FFFFFF;
+}
+.color-25 {
+    background-color: #D0E7FF;
+    color: #231F20;
+}
+.color-26 {
+    background-color: #A2CFFE;
+    color: #231F20;
+}
+.color-27 {
+    background-color: #73B8FE;
+    color: #231F20;
+}
+.color-28 {
+    background-color: #2E96FB;
+    color: #231F20;
+}
+.color-29 {
+    background-color: #0468C8;
+    color: #FFFFFF;
+}
+.color-30 {
+    background-color: #0252A2;
+    color: #FFFFFF;
+}
+.color-31 {
+    background-color: #003B72;
+    color: #FFFFFF;
+}
+.color-32 {
+    background-color: #002B55;
+    color: #FFFFFF;
+}
+.color-33 {
+    background-color: #D2EEE9;
+    color: #231F20;
+}
+.color-34 {
+    background-color: #8CD5CA;
+    color: #231F20;
+}
+.color-35 {
+    background-color: #5DC1B4;
+    color: #231F20;
+}
+.color-36 {
+    background-color: #30B3A0;
+    color: #231F20;
+}
+.color-37 {
+    background-color: #008C78;
+    color: #FFFFFF;
+}
+.color-38 {
+    background-color: #007766;
+    color: #FFFFFF;
+}
+.color-39 {
+    background-color: #015A4C;
+    color: #FFFFFF;
+}
+.color-40 {
+    background-color: #003C33;
+    color: #FFFFFF;
+}
+.color-41 {
+    background-color: #FDE2B9;
+    color: #231F20;
+}
+.color-42 {
+    background-color: #FDCD8B;
+    color: #231F20;
+}
+.color-43 {
+    background-color: #FFB95F;
+    color: #231F20;
+}
+.color-44 {
+    background-color: #FFA431;
+    color: #231F20;
+}
+.color-45 {
+    background-color: #E78400;
+    color: #FFFFFF;
+}
+.color-46 {
+    background-color: #D17800;
+    color: #FFFFFF;
+}
+.color-47 {
+    background-color: #BF6610;
+    color: #FFFFFF;
+}
+.color-48 {
+    background-color: #9D540D;
+    color: #FFFFFF;
+}
+.color-49 {
+    background-color: #FFCFE0;
+    color: #231F20;
+}
+.color-50 {
+    background-color: #FFA4C0;
+    color: #231F20;
+}
+.color-51 {
+    background-color: #FF74A1;
+    color: #231F20;
+}
+.color-52 {
+    background-color: #FF4783;
+    color: #231F20;
+}
+.color-53 {
+    background-color: #D60345;
+    color: #FFFFFF;
+}
+.color-54 {
+    background-color: #B6053C;
+    color: #FFFFFF;
+}
+.color-55 {
+    background-color: #960131;
+    color: #FFFFFF;
+}
+.color-56 {
+    background-color: #740128;
+    color: #FFFFFF;
+}
+

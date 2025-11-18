@@ -1,0 +1,1779 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    13. FORM STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    13.1 - FORM BASE STYLES
+===========================================================================*/
+
+/********************************************
+    13.1.1 | form
+********************************************/
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/********************************************
+    13.1.2 | fieldset
+********************************************/
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/********************************************
+    13.1.3 | fieldset > header
+********************************************/
+
+fieldset > header {
+    display: flex;
+    flex-direction: column;
+}
+
+/********************************************
+    13.1.4 | .fieldset-body
+********************************************/
+
+.fieldset-body {
+    display: flex;
+    flex-direction: column;
+}
+.fieldset-body > .row:not(:last-of-type) {
+    margin-bottom: 14px;
+}
+
+
+/*===========================================================================
+    13.2 - FORM VARIANTS
+===========================================================================*/
+
+/********************************************
+    13.2.1 | .fieldset-accordion-group
+********************************************/
+
+.fieldset-accordion-group {
+    flex-grow: unset;
+}
+.fieldset-accordion-group > .fieldset-body {
+    display: none;
+}
+.fieldset-accordion-group.active {
+    overflow: auto;
+}
+.fieldset-accordion-group.active > .fieldset-body {
+    display: flex;
+    overflow: auto;
+}
+
+
+/*===========================================================================
+    13.3 - FIELD STYLES
+===========================================================================*/
+
+/********************************************
+    13.3.1 | input
+********************************************/
+
+.input-group input[type="date"],
+.input-group input[type="email"],
+.input-group input[type="file"],
+.input-group input[type="password"],
+.input-group input[type="text"],
+.input-group input[type="time"],
+.input-group input[type="number"] {
+    border-radius: 4px;
+    display: flex;
+    font-family: 'roboto-regular';
+    flex-grow: 1;
+    font-size: 1rem; /* FONT SIZE */
+    height: 32px;
+    width: 100%;
+    z-index: 100;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-group input[type="date"],
+    #light-mode .input-group input[type="email"],
+    #light-mode .input-group input[type="file"],
+    #light-mode .input-group input[type="password"],
+    #light-mode .input-group input[type="text"],
+    #light-mode .input-group input[type="time"],
+    #light-mode .input-group input[type="number"] {
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+        color: #080808; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-group input[type="date"],
+    #dark-mode .input-group input[type="email"],
+    #dark-mode .input-group input[type="file"],
+    #dark-mode .input-group input[type="password"],
+    #dark-mode .input-group input[type="text"],
+    #dark-mode .input-group input[type="time"],
+    #dark-mode .input-group input[type="number"] {
+        border: 1px solid #313131; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+.input-group input[type="date"],
+.input-group input[type="time"] {
+    text-indent: 5px;
+}
+.input-group input[type="email"],
+.input-group input[type="file"],
+.input-group input[type="password"],
+.input-group input[type="text"],
+.input-group input[type="number"] {
+    text-indent: 12px;
+}
+
+/*=========================
+    .input-text
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-text {
+        background-color: #F4F6FC;
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-text {
+        background-color: #3D3C3E;
+    }
+
+/*=========================
+    .input-date
+=========================*/
+
+.input-date {
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 9.63px 11px;
+    cursor: pointer;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-date {
+        background-color: #E9ECF4;
+        background-image: url(../img/calendar-icon.svg); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-date {
+        background-color: #3D3C3E;
+        background-image: url(../img/calendar-icon.svg); /* DARK MODE */
+    }
+
+/*=========================
+    .input-time
+=========================*/
+
+.input-time {
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    cursor: pointer;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-time {
+        background-color: #E9ECF4;
+        background-image: url(../img/clock-icon.svg); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-time {
+        background-color: #3D3C3E;
+        background-image: url(../img/clock-icon.svg); /* DARK MODE */
+    }
+
+/*=========================
+    .input-tag
+=========================*/
+
+.input-tag {
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 11px 6.87px;
+    cursor: text;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-tag {
+        background-color: #F4F6FC;
+        background-image: url(../img/tag-icon.svg); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-tag {
+        background-color: #3D3C3E;
+        background-image: url(../img/tag-icon.svg); /* DARK MODE */
+    }
+
+/*=========================
+    .input-select
+=========================*/
+
+.input-select {
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 5px 3px;
+    cursor: pointer;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-select {
+        background-color: #E9ECF4;
+        background-image: url(../img/select-icon.svg); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-select {
+        background-color: #3D3C3E;
+        background-image: url(../img/select-icon.svg); /* DARK MODE */
+    }
+
+/*=========================
+    .input-search
+=========================*/
+
+.input-search {
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .input-search {
+        background-color: #F4F6FC;
+        background-image: url(../img/search-icon.svg); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .input-search {
+        background-color: #3D3C3E;
+        background-image: url(../img/search-icon.svg); /* DARK MODE */
+    }
+
+#airnguru .input-search {
+    text-indent: 30px !important;
+}
+#airnguru .dialog-panel .input-group > .input-search {
+    border: unset;
+    border-radius: 0;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .dialog-panel .input-group > .input-search {
+        background-color: #F4F6FC; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .dialog-panel .input-group > .input-search {
+        background-color: #3D3C3E; /* DARK MODE */
+    }
+
+.input-search::placeholder {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+#input-delete {
+    max-width: 90px;
+}
+
+/********************************************
+    13.3.2 | textarea
+********************************************/
+
+textarea {
+    border-radius: 4px;
+    display: flex;
+    font-family: 'poppins-regular';
+    flex-grow: 1;
+    font-size: 1rem; /* FONT SIZE */
+    height: 70px;
+    padding: 15px;
+    width: 100%;
+    z-index: 100;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode textarea {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+        color: #080808; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode textarea {
+        background-color: #3D3C3E; /* DARK MODE */
+        border: 1px solid #313131; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+.textarea-lg {
+    height: 250px;
+}
+.textarea-xl {
+    height: 500px;
+}
+
+/********************************************
+    13.3.3 | .checkbox
+********************************************/
+
+.checkbox {
+    align-items: center;
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row;
+    position: relative;
+    white-space: nowrap;
+}
+.checkbox > *:not(:last-child) {
+    margin-right: 8px;
+}
+.checkbox input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+}
+
+/*=========================
+    .checkbox-text
+=========================*/
+
+.checkbox-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+.checkbox-text::-moz-selection {
+    text-shadow: none;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-text::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-text::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-text::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-text::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+.checkbox-text > .text-info {
+    margin-left: 4px;
+}
+.checkbox-text > .text-info::-moz-selection {
+    text-shadow: none;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-text > .text-info::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-text > .text-info::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-text > .text-info::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-text > .text-info::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+/*=========================
+    .checkbox-container
+=========================*/
+
+.checkbox-container {
+    border-radius: 4px;
+    height: 17px;
+    position: relative;
+    width: 17px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-container {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-container {
+        background-color: #FFFFFF; /* LIGHT MODE */
+        border: 1px solid #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox:hover input~.checkbox-container {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border-color: #888888; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox:hover input~.checkbox-container {
+        background-color: rgba(0, 143, 247, 0.03); /* DARK MODE */
+        border-color: rgba(0,0,0,0.6); /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox input:active~.checkbox-container {
+        background-color: rgba(0, 143, 247, 0.03); /* LIGHT MODE */
+        border-color: rgba(0,0,0,0.6); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox input:active~.checkbox-container {
+        background-color: rgba(0, 143, 247, 0.03); /* DARK MODE */
+        border-color: rgba(255, 255, 255, 0.6); /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox input:checked~.checkbox-container {
+        background-color: #036CEC; /* LIGHT MODE */
+        border-color: #036CEC; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox input:checked~.checkbox-container {
+        background-color: rgba(0, 143, 247, 0.03); /* DARK MODE */
+        border-color: rgba(255, 255, 255, 0.6); /* DARK MODE */
+    }
+
+.checkbox-container::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5.4px;
+    top: 1.5px;
+    width: 2px;
+    height: 7.2px;
+    border-width: 0 2.5px 2.8px 0;
+    transform: rotate(45deg);
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-container::after {
+        border: solid #FFFFFF; /* LIGHT MODE */
+        border-width: 0 2.5px 2.8px 0;
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-container::after {
+        border: solid #FFFFFF; /* DARK MODE */
+        border-width: 0 2.5px 2.8px 0;
+    }
+
+.checkbox input:checked~.checkbox-container::after {
+    display: block;
+}
+.checkbox.deselect-all .checkbox-container::after {
+    left: 5.4px;
+    top: 1.5px;
+    width: 2px;
+    height: 10px;
+    border-width: 0 2.5px 0 0 !important;
+    transform: rotate(90deg);
+}
+
+/********************************************
+    13.3.4 | .radio
+********************************************/
+
+.radio {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    white-space: nowrap;
+}
+.radio > *:not(:last-child) {
+    margin-right: 8px;
+}
+.radio input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+/*=========================
+    .radio-text
+=========================*/
+
+.radio-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem; /* FONT SIZE */
+}
+.radio-text::-moz-selection {
+    text-shadow: none;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-text::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-text::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-text::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-text::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+.radio-text > .text-info {
+    margin-left: 4px;
+}
+.radio-text > .text-info::-moz-selection {
+    text-shadow: none;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-text > .text-info::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-text > .text-info::-moz-selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-text > .text-info::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-text > .text-info::selection {
+        background: none repeat scroll 0 0 #FFFFFF; /* ACCENT COLOR */
+        color: #231F20; /* ACCENT COLOR */
+    }
+
+/*=========================
+    .radio-container
+=========================*/
+
+.radio-container {
+    border-radius: 9px;
+    height: 16px;
+    position: relative;
+    width: 16px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-container {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-container {
+        background-color: #FFFFFF; /* DARK MODE */
+        border: 1px solid #FFFFFF; /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio:hover input~.radio-container {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border-color: #888888; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio:hover input~.radio-container {
+        background-color: rgba(0, 143, 247, 0.03); /* DARK MODE */
+        border-color: rgba(0,0,0,0.6); /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio input:active~.radio-container {
+        background-color: rgba(0, 143, 247, 0.05); /* LIGHT MODE */
+        border-color: rgba(0, 0, 0, 0.6); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio input:active~.radio-container {
+        background-color: rgba(0, 143, 247, 0.05); /* DARK MODE */
+        border-color: rgba(255, 255, 255, 0.6); /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio input:checked~.radio-container {
+        background-color: #036CEC; /* LIGHT MODE */
+        border-color: #036CEC; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio input:checked~.radio-container {
+        background-color: rgba(0, 143, 247, 0); /* DARK MODE */
+        border-color: rgba(255, 255, 255, 1); /* DARK MODE */
+    }
+
+.radio-container::after {
+    border-radius: 50%;
+    content: "";
+    display: none;
+    height: 6px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 6px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .radio-container::after {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .radio-container::after {
+        background-color: #FFFFFF; /* DARK MODE */
+    }
+
+.radio input:checked~.radio-container::after {
+    display: block;
+}
+
+
+/*===========================================================================
+    13.4 - FIELD SIZE STYLES
+===========================================================================*/
+
+/********************************************
+    13.4.1 | .input-xs
+********************************************/
+
+#airnguru .input-xs {
+    max-width: 38px;
+    width: 38px;
+}
+
+/********************************************
+    13.4.2 | .input-sm
+********************************************/
+
+#airnguru .input-sm {
+    max-width: 60px;
+    width: 60px;
+}
+
+/********************************************
+    13.4.3 | .input-lg
+********************************************/
+
+#airnguru .input-lg {
+    max-width: 94px;
+    width: 94px;
+}
+
+/********************************************
+    13.4.4 | .input-xl
+********************************************/
+
+#airnguru .input-xl {
+    max-width: 130px;
+    width: 130px;
+}
+
+/********************************************
+    13.4.5 | .input-table
+********************************************/
+
+#airnguru .input-table {
+    height: 22px;
+    text-indent: 8px;
+}
+
+
+/*===========================================================================
+    13.5 - FORM INNER STYLES
+===========================================================================*/
+
+/********************************************
+    13.5.1 | .form-group
+********************************************/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+/********************************************
+    13.5.2 | .title-group
+********************************************/
+
+.title-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 6px 0;
+    position: relative;
+}
+.title-group > *:not(:last-child) {
+    margin-right: 4px;
+}
+.title-group > h4,
+.title-group > label {
+    font-family: 'roboto-condensed';
+    font-weight: 400;
+}
+.title-group > h4 > span,
+.title-group > label > span {
+    font-size: 0.923rem; /* FONT SIZE */
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .title-group > h4 > span,
+    #light-mode .title-group > label > span {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .title-group > h4 > span,
+    #dark-mode .title-group > label > span {
+        color: #FFFFFF; /* LIGHT MODE */
+    }
+
+.title-group > .title-group-action {
+    display: flex;
+    flex-direction: row;
+}
+.title-group > .title-group-action,
+.title-group > .title-group-action .button-text {
+    font-size: 0.85rem; /* FONT SIZE */
+}
+.title-group-action > .button-link {
+    text-decoration: underline;
+}
+
+/********************************************
+    13.5.3 | .input-groups-container
+********************************************/
+
+.input-groups-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    order: 1;
+}
+.input-groups-container > * {
+    flex-grow: 1;
+    width: 100%;
+}
+.input-groups-container > *:not(:last-child) {
+    margin-right: 6px;
+}
+
+/********************************************
+    13.5.4 | .input-group
+********************************************/
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    position: relative;
+}
+
+/********************************************
+    13.5.5 | .counter-group
+********************************************/
+
+.counter-group {
+    margin-top: 2px;
+    text-align: right;
+}
+
+/********************************************
+    13.5.6 | .half-field
+********************************************/
+
+.half-field > input {
+    max-width: 50%;
+}
+
+/********************************************
+    13.5.7 | .checkbox-group
+********************************************/
+
+.checkbox-group > .title-group {
+    margin-bottom: 10px;
+}
+.checkbox-group > .input-groups-container {
+    flex-wrap: wrap;
+    gap: 8px 0;
+}
+.checkbox-group > .input-groups-container > .input-group {
+    flex-grow: 0;
+    margin-right: 18px;
+    width: auto;
+}
+
+/*=========================
+    .stack-group
+=========================*/
+
+.checkbox-group.stack-group > .input-groups-container > .input-group {
+    flex-grow: 1;
+    margin-right: 0;
+    width: 100%;
+}
+
+/********************************************
+    13.5.8 | .radio-group
+********************************************/
+
+.radio-group > .title-group {
+    margin-bottom: 10px;
+}
+.radio-group > .input-groups-container {
+    flex-wrap: wrap;
+    gap: 8px 0;
+}
+.radio-group > .input-groups-container > .input-group {
+    flex-grow: 0;
+    margin-right: 18px;
+    width: auto;
+}
+
+/*=========================
+    .stack-group
+=========================*/
+
+.radio-group.stack-group > .input-groups-container > .input-group {
+    flex-grow: 1;
+    margin-right: 0;
+    width: 100%;
+}
+
+/*=========================
+    .adjusted-currency
+=========================*/
+
+.radio-group.adjusted-currency > .input-groups-container > .dialog-box {
+    max-width: 70px;
+    left: 124px;
+    position: absolute;
+}
+
+/********************************************
+    13.5.9 | .fd-rpl-group
+********************************************/
+
+#airnguru .fd-rpl-group .input-groups-container > .input-group:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: auto;
+}
+
+/********************************************
+    13.5.10 | .org-dest-group
+********************************************/
+
+#airnguru .org-dest-group > .input-groups-container > .field-group {
+    display: flex;
+    flex-direction: column;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .title-group > label {
+    margin-right: 0;
+    width: 50%;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .title-group > label:nth-child(2) {
+    padding-left: 10px;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .input-group {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .input-group {
+        background-color: #F4F6FC; /* LIGHT MODE */
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .input-group {
+        background-color: #3D3C3E; /* DARK MODE */
+        border: 1px solid rgba(0, 0, 0, 0.4); /* DARK MODE */
+    }
+
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .input-group > input {
+    background-color: transparent;
+    border: unset;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(1) > .input-group > .button-utility .button-icon {
+    font-size: 1rem; /* FONT SIZE */
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(2) {
+    width: 100px;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(3) {
+    flex-grow: 0;
+    width: auto;
+}
+#airnguru .org-dest-group .checkbox {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+#airnguru .org-dest-group .checkbox .checkbox-container,
+#airnguru .org-dest-group .checkbox input[type="checkbox"] {
+    margin: 0 0 4px 0;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(3) > .input-group {
+    height: 50px;
+}
+#airnguru .org-dest-group > .input-groups-container > .field-group:nth-child(4) {
+    align-self: flex-end;
+    flex-grow: 0;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+/********************************************
+    13.5.11 | .import-file-group
+********************************************/
+
+.import-file-group {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .import-file-group {
+        background-color: #F8FAFF; /* LIGHT MODE */
+        border-color: #D2D3D7; /* LIGHT MODE */
+    }
+    #light-mode .import-file-group > div:not(:last-child) {
+        border-bottom: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .import-file-group {
+        background-color: #F8FAFF; /* DARK MODE */
+        border-color: #313444; /* DARK MODE */
+    }
+    #dark-mode .import-file-group > div:not(:last-child) {
+        border-bottom: 1px solid #313444; /* DARK MODE */
+    }
+
+/*=========================
+    .file-browse
+=========================*/
+
+.file-browse {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    padding: 0 12px;
+    width: 100%;
+}
+.file-browse > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.file-browse > div > *:not(:last-child) {
+    margin-right: 8px;
+}
+
+/*=========================
+    .file-preparing
+=========================*/
+
+.file-preparing {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    padding: 0 12px;
+    width: 100%;
+}
+.file-preparing > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.file-preparing > div:nth-child(1) > *:not(:last-child) {
+    margin-right: 8px;
+}
+.file-preparing > div:nth-child(1) > div:nth-child(1) {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-preparing > div:nth-child(1) > div:nth-child(1) {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-preparing > div:nth-child(1) > div:nth-child(1) {
+        color: #65686D; /* DARK MODE */
+    }
+
+.file-preparing > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.file-preparing > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) {
+    margin-bottom: 2px;
+}
+.file-preparing > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+    font-size: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-preparing > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-preparing > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+        color: #65686D; /* DARK MODE */
+    }
+
+.file-preparing > div:nth-child(1) > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+.file-preparing > div:nth-child(1) > div:nth-child(3) > *:not(:last-child) {
+    margin-right: 6px;
+}
+.file-preparing > div:nth-child(2) .loading-bar-container {
+    display: flex;
+    flex-direction: row;
+    height: 2px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-preparing > div:nth-child(2) .loading-bar-container {
+        background-color: #CCE0F5; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-preparing > div:nth-child(2) .loading-bar-container {
+        background-color: #CCE0F5; /* DARK MODE */
+    }
+
+.file-preparing > div:nth-child(2) .loading-bar-progress {
+    height: 2px;
+    width: 70%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-preparing > div:nth-child(2) .loading-bar-progress {
+        background-color: #0865FE; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-preparing > div:nth-child(2) .loading-bar-progress {
+        background-color: #0865FE; /* DARK MODE */
+    }
+
+/*=========================
+    .file-failed
+=========================*/
+
+.file-failed {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    padding: 0 12px;
+    width: 100%;
+}
+.file-failed > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.file-failed > div > *:not(:last-child) {
+    margin-right: 8px;
+}
+.file-failed > div > div:nth-child(1) {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-failed > div > div:nth-child(1) {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-failed > div > div:nth-child(1) {
+        color: #65686D; /* DARK MODE */
+    }
+
+.file-failed > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.file-failed > div > div:nth-child(2) > span:nth-child(1) {
+    margin-bottom: 2px;
+}
+.file-failed > div > div:nth-child(2) > span:nth-child(2) {
+    font-size: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-failed > div > div:nth-child(2) > span:nth-child(2) {
+        color: #BF4767; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-failed > div > div:nth-child(2) > span:nth-child(2) {
+        color: #BF4767; /* DARK MODE */
+    }
+
+.file-failed > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+.file-failed > div > div:nth-child(3) > *:not(:last-child) {
+    margin-right: 6px;
+}
+
+/*=========================
+    .file-ready
+=========================*/
+
+.file-ready {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    padding: 0 12px;
+    width: 100%;
+}
+.file-ready > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.file-ready > div > *:not(:last-child) {
+    margin-right: 8px;
+}
+.file-ready > div > div:nth-child(1) {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-ready > div > div:nth-child(1) {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-ready > div > div:nth-child(1) {
+        color: #65686D; /* DARK MODE */
+    }
+
+.file-ready > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.file-ready > div > div:nth-child(2) > span:nth-child(1) {
+    margin-bottom: 2px;
+}
+.file-ready > div > div:nth-child(2) > span:nth-child(2) {
+    font-size: 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .file-ready > div > div:nth-child(2) > span:nth-child(2) {
+        color: #3E8635; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+    
+    #dark-mode .file-ready > div > div:nth-child(2) > span:nth-child(2) {
+        color: #3E8635; /* DARK MODE */
+    }
+
+.file-ready > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+.file-ready > div > div:nth-child(3) > *:not(:last-child) {
+    margin-right: 6px;
+}
+
+/********************************************
+    13.5.12 | .and-or-group
+********************************************/
+
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(1) > .input-group > input:nth-child(1),
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(3) > .input-group > input:nth-child(1) {
+    background-position: right 4px center;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+    text-indent: 6px;
+    width: 34px;
+}
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(1) > .input-group > input:nth-child(2),
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(3) > .input-group > input:nth-child(2) {
+    background-position: right 8px center;
+    border-radius: 0 4px 4px 0;
+    border-left: unset;
+    text-indent: 5px;
+}
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(1) > .input-group > input:nth-child(2).input-date,
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(3) > .input-group > input:nth-child(2).input-date,
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(1) > .input-group > input:nth-child(2).input-time,
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(3) > .input-group > input:nth-child(2).input-time {
+    font-size: 0.95rem;
+}
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(2) {
+    flex-grow: 0;
+    max-width: 42px;
+    min-width: 42px;
+    width: 42px;
+}
+#airnguru .and-or-group > .input-groups-container > .dialog-box:nth-child(2) > .input-group > input {
+    background-position: right 5px center;
+    font-size: 0.9rem;
+    text-indent: 6px;
+}
+
+/********************************************
+    13.5.13 | .from-to-group
+********************************************/
+
+.from-to-group > .input-groups-container {
+    margin-top: 4px;
+}
+.from-to-group > .input-groups-container .input-group > label {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'roboto-condensed';
+    font-size: 0.9em; /* FONT SIZE */
+    height: auto;
+    justify-content: center;
+    left: 7px;
+    padding: 0 3px;
+    position: absolute;
+    text-transform: capitalize;
+    top: -9px;
+    width: auto;
+    z-index: 200;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .from-to-group > .input-groups-container .input-group > label {
+        color: #65686D; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .from-to-group > .input-groups-container .input-group > label {
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    13.6 - VALIDATION STYLES
+===========================================================================*/
+
+/********************************************
+    13.6.1 | .validation-message
+********************************************/
+
+.validation-message {
+    display: none;
+    font-family: 'roboto';
+    font-size: 0.9em; /* FONT SIZE */
+    padding: 2px 4px;
+    position: absolute;
+    right: 0;
+    z-index: 60;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .validation-message {
+        background-color: #FD87A4; /* LIGHT MODE */
+        color: #FFFFFF; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .validation-message {
+        background-color: #FD87A4; /* DARK MODE */
+        color: #FFFFFF; /* DARK MODE */
+    }
+
+/********************************************
+    13.6.2 | .single-validation
+********************************************/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .single-validation.form-error > .title-group > h4,
+    #light-mode .single-validation.form-error > .title-group > label {
+        color: #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .single-validation.form-error > .title-group > h4,
+    #dark-mode .single-validation.form-error > .title-group > label {
+        color: #FD87A4; /* DARK MODE */
+    }
+
+.single-validation.form-error > .title-group > .validation-message {
+    display: flex;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .single-validation.form-error .input-group > input,
+    #light-mode .single-validation.form-error .input-group > textarea {
+        border-bottom: 1px solid #FD87A4; /* LIGHT MODE */
+        border-left: 1px solid #FD87A4; /* LIGHT MODE */
+        border-right: 1px solid #FD87A4; /* LIGHT MODE */
+        border-top: 1px solid #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .single-validation.form-error .input-group > input,
+    #dark-mode .single-validation.form-error .input-group > textarea {
+        border-bottom: 1px solid #FD87A4; /* DARK MODE */
+        border-left: 1px solid #FD87A4; /* DARK MODE */
+        border-right: 1px solid #FD87A4; /* DARK MODE */
+        border-top: 1px solid #FD87A4; /* DARK MODE */
+    }
+
+/********************************************
+    13.6.3 | .multiple-validation
+********************************************/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .multiple-validation.form-error > .title-group > h4,
+    #light-mode .multiple-validation.form-error > .title-group > label {
+        color: #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .multiple-validation.form-error > .title-group > h4,
+    #dark-mode .multiple-validation.form-error > .title-group > label {
+        color: #FD87A4; /* LIGHT MODE */
+    }
+
+.multiple-validation.form-error > .title-group > .validation-message {
+    display: flex;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .multiple-validation.form-error .input-group.field-error > input,
+    #light-mode .multiple-validation.form-error .input-group.field-error > textarea {
+        border-bottom: 1px solid #FD87A4; /* LIGHT MODE */
+        border-left: 1px solid #FD87A4; /* LIGHT MODE */
+        border-right: 1px solid #FD87A4; /* LIGHT MODE */
+        border-top: 1px solid #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .multiple-validation.form-error .input-group.field-error > input,
+    #dark-mode .multiple-validation.form-error .input-group.field-error > textarea {
+        border-bottom: 1px solid #FD87A4; /* DARK MODE */
+        border-left: 1px solid #FD87A4; /* DARK MODE */
+        border-right: 1px solid #FD87A4; /* DARK MODE */
+        border-top: 1px solid #FD87A4; /* DARK MODE */
+    }
+
+/********************************************
+    13.6.4 | .checkbox-validation
+********************************************/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-validation.form-error > .title-group > h4,
+    #light-mode .checkbox-validation.form-error > .title-group > label {
+        color: #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-validation.form-error > .title-group > h4,
+    #dark-mode .checkbox-validation.form-error > .title-group > label {
+        color: #FD87A4; /* DARK MODE */
+    }
+
+.checkbox-validation.form-error > .title-group > .validation-message {
+    display: flex;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-validation.form-error .input-group > input {
+        border-bottom: 1px solid #FD87A4; /* LIGHT MODE */
+        border-left: 1px solid #FD87A4; /* LIGHT MODE */
+        border-right: 1px solid #FD87A4; /* LIGHT MODE */
+        border-top: 1px solid #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-validation.form-error .input-group > input {
+        border-bottom: 1px solid #FD87A4; /* DARK MODE */
+        border-left: 1px solid #FD87A4; /* DARK MODE */
+        border-right: 1px solid #FD87A4; /* DARK MODE */
+        border-top: 1px solid #FD87A4; /* DARK MODE */
+    }
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .checkbox-validation.form-error .input-group > label {
+        color: #FD87A4; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .checkbox-validation.form-error .input-group > label {
+        color: #FD87A4; /* DARK MODE */
+    }
+

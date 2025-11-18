@@ -1,0 +1,279 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    1. GENERAL STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    1.1 - BASE ELEMENTS
+===========================================================================*/
+
+/********************************************
+    1.1.1 | *
+********************************************/
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+*:focus-visible {
+    outline: 1px dashed;
+    z-index: 1000;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode *:focus-visible {
+        outline-color: #0865FE; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode *:focus-visible {
+        outline-color: #977933; /* ACCENT COLOR */
+    }
+
+/********************************************
+    1.1.2 | Horizontal Rule
+********************************************/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode hr {
+        border-top: 1px solid #CCCCCC; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode hr {
+        border-top: 1px solid #CCCCCC; /* DARK MODE */
+    }
+
+/********************************************
+    1.1.3 | Headings
+********************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.45;
+}
+h1 {
+    font-family: 'roboto-bold';
+    font-size: 1.7rem; /* FONT SIZE */
+    text-transform: capitalize;
+}
+h2 {
+    font-family: 'roboto-bold';
+    font-size: 1.39rem; /* FONT SIZE */
+}
+
+/********************************************
+    1.1.4 | Paragraphs
+********************************************/
+
+p {
+    line-height: 1.45;
+}
+
+/********************************************
+    1.1.5 | List Items
+********************************************/
+
+li {
+    list-style: outside none none;
+}
+
+/********************************************
+    1.1.6 | Text Selection
+********************************************/
+
+::selection,
+::-moz-selection {
+    color: #FFFFFF; /* ACCENT COLOR  */
+    text-shadow: none;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode ::selection,
+    #light-mode ::-moz-selection {
+        background: none repeat scroll 0 0 #0865FE; /* ACCENT COLOR */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode ::selection,
+    #dark-mode ::-moz-selection {
+        background: none repeat scroll 0 0 #977933; /* ACCENT COLOR */
+    }
+
+
+/*===========================================================================
+    1.2 - FORM FIELDS
+===========================================================================*/
+
+/********************************************
+    1.2.1 | Fieldset
+********************************************/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/********************************************
+    1.2.2 | Input Fields
+********************************************/
+
+input {
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+}
+
+/*=========================
+    Radio & Checkbox
+=========================*/
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: top;
+}
+
+/*=========================
+    Date & Time Input
+=========================*/
+
+/* Hide default pickers */
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*=========================
+    Number Input
+=========================*/
+
+/* Remove spinners */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/********************************************
+    1.2.3 | Select
+********************************************/
+
+select {
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+}
+
+/********************************************
+    1.2.4 | Textarea
+********************************************/
+
+textarea {
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+/********************************************
+    1.2.5 | Placeholder Text
+********************************************/
+
+::placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+    opacity: 1;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode ::placeholder,
+    #light-mode ::-webkit-input-placeholder,
+    #light-mode ::-moz-placeholder,
+    #light-mode :-moz-placeholder,
+    #light-mode :-ms-input-placeholder,
+    #light-mode ::-ms-input-placeholder {
+        color: #9EA7B1; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode ::placeholder,
+    #dark-mode ::-webkit-input-placeholder,
+    #dark-mode ::-moz-placeholder,
+    #dark-mode :-moz-placeholder,
+    #dark-mode :-ms-input-placeholder,
+    #dark-mode ::-ms-input-placeholder {
+        color: #7D8894; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    1.3 - MEDIA ELEMENTS
+===========================================================================*/
+
+/********************************************
+    1.3.1 | Images
+********************************************/
+
+img::selection,
+img::-moz-selection {
+    background-color: transparent;
+}
+
+/********************************************
+    1.3.2 | Multimedia Elements
+********************************************/
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+

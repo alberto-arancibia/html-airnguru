@@ -1,0 +1,194 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    19. NOTIFICATION STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    19.1 - NOTIFICATION BASE STYLES
+===========================================================================*/
+
+/********************************************
+    19.1.1 | .notification
+********************************************/
+
+.notification {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem; /* FONT SIZE */
+    height: auto;
+    line-height: 1.45;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification {
+        border: 1px solid rgba(0, 0, 0, 0.4); /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification {
+        border: 1px solid rgba(0, 0, 0, 0.4); /* DARK MODE */
+    }
+
+.notification > div {
+    display: flex;
+    flex-direction: row;
+}
+.notification > div:nth-child(1),
+.notification > div:nth-child(3) {
+    justify-content: space-between;
+}
+.notification > div:nth-child(1) {
+    margin-bottom: 10px;
+}
+.notification > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/*===========================================================================
+    19.2 - NOTIFICATION PRIORITY
+===========================================================================*/
+
+/********************************************
+    19.2.1 | .notification-priority
+********************************************/
+
+.notification-priority {
+    display: flex;
+    height: 60%;
+    margin-right: 10px;
+    left: 9px;
+    position: absolute;
+    top: 20%;
+    width: 3px;
+}
+
+/*=========================
+    .high
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification-priority.high {
+        background-color: #FF5050; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification-priority.high {
+        background-color: #FF5050; /* DARK MODE */
+    }
+
+/*=========================
+    .medium
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification-priority.medium {
+        background-color: #FFD35A; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification-priority.medium {
+        background-color: #FFD35A; /* DARK MODE */
+    }
+
+/*=========================
+    .low
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification-priority.low {
+        background-color: #50CD89; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification-priority.low {
+        background-color: #50CD89; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    19.3 - NOTIFICATION STATUS
+===========================================================================*/
+
+/********************************************
+    19.3.1 | .notification-status
+********************************************/
+
+.notification-status {
+    font-size: 0.8rem; /* FONT SIZE */
+    text-transform: uppercase;
+}
+
+/*=========================
+    .pending
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification-status.pending {
+        color: #7E8299; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification-status.pending {
+        color: #7E8299; /* DARK MODE */
+    }
+
+/*=========================
+    .resolved
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .notification-status.resolved {
+        color: #50CD89; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .notification-status.resolved {
+        color: #50CD89; /* DARK MODE */
+    }
+

@@ -1,0 +1,454 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+
+    14. DISPLAY BOX STYLES
+   
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*===========================================================================
+    14.1 - DISPLAY BOX BASE STYLES
+===========================================================================*/
+
+/********************************************
+    14.1.1 | .display-box
+********************************************/
+
+.display-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.justify-flex-end {
+    justify-content: flex-end;
+}
+.overflow {
+    overflow: auto;
+}
+
+/********************************************
+    14.1.2 | .display-box > header
+********************************************/
+
+.display-box > header {
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 58px;
+    margin-bottom: -8px;
+    padding: 0 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .display-box > header {
+        background-color: #F9FAFB; /* LIGHT MODE */
+    }
+    
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .display-box > header {
+        background-color: #424048; /* DARK MODE */
+    }
+
+/********************************************
+    14.1.3 | .display-body
+********************************************/
+
+.display-box > .display-body {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 12px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .display-box > .display-body {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+    
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .display-box > .display-body {
+        background-color: #504E53; /* DARK MODE */
+    }
+
+
+/*===========================================================================
+    14.2 - DISPLAY BOX VARIANTS
+===========================================================================*/
+
+/********************************************
+    14.2.1 | .display-title
+********************************************/
+
+.display-title {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 50px;
+    padding: 8px 0px;
+}
+.display-title > .col {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-title > .col > *:not(:last-child) {
+    margin-right: 4px;
+}
+
+/********************************************
+    14.2.2 | .display-actions
+********************************************/
+
+.display-actions {
+    align-items: center;
+    height: auto;
+    padding: 4px 0px;
+}
+.display-actions > .col {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-actions > .col > *:not(:last-child) {
+    margin-right: 4px;
+}
+.display-actions > .col.justify-flex-end > .form-group {
+    max-width: 190px;
+}
+
+/********************************************
+    14.2.3 | .display-table
+********************************************/
+
+.display-table {
+    flex-direction: row;
+}
+.display-table > .col {
+    flex-direction: column;
+}
+.display-table > .col:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+    /*-------------------------
+        Responsive Behavior
+    -------------------------*/
+
+    @media (max-width: 992px) {
+
+        .display-table {
+            flex-direction: column;
+        }
+        .display-table > .col:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
+    }
+
+.side-panel .display-table {
+    flex-grow: 1;
+}
+
+/********************************************
+    14.2.4 | .display-pagination
+********************************************/
+
+.display-pagination {
+    border-radius: 0 0 8px 8px;
+    border-style: solid;
+    border-top: unset;
+    border-width: 1px;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 6px;
+    padding: 5px 6px;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .display-pagination {
+        background-color: #F8FAFF; /* LIGHT MODE */
+        border-color: #DDDDDD; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .display-pagination {
+        background-color: #F8FAFF; /* DARK MODE */
+        border-color: #DDDDDD; /* DARK MODE */
+    }
+
+.display-pagination > .col {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-pagination > .col > *:not(:last-child) {
+    margin-right: 4px;
+}
+.display-pagination > .col:first-child > .text-info {
+    margin-left: 4px;
+}
+
+/*=========================
+    .button-secondary
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .display-pagination .button-secondary {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+    #light-mode .display-pagination .button-secondary.button-outlined:focus,
+    #light-mode .display-pagination .button-secondary.button-outlined:hover {
+        border-color: #DDDDDD;
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .display-pagination .button-secondary {
+        background-color: #FFFFFF; /* LIGHT MODE */
+    }
+    #dark-mode .display-pagination .button-secondary.button-outlined:focus,
+    #dark-mode .display-pagination .button-secondary.button-outlined:hover {
+        border-color: #DDDDDD;
+    }
+
+/*=========================
+    .button-group
+=========================*/
+
+.display-pagination .button-group > .button-secondary:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+    border-right: unset;
+}
+.display-pagination .button-group > .dialog-box > .button-secondary {
+    border-radius: 0;
+    border-left: unset;
+    border-right: unset;
+}
+.display-pagination .button-group > .button-secondary:nth-child(3) {
+    border-radius: 0 6px 6px 0;
+    border-left: unset;
+}
+
+/********************************************
+    14.2.5 | .display-active-filters
+********************************************/
+
+.display-active-filters {
+    height: auto;
+    padding: 6px 0px;
+}
+.display-active-filters > .col {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-active-filters > .col:nth-child(1),
+.display-active-filters > .col:nth-child(3) {
+    flex-grow: 0;
+}
+.display-active-filters > .col:nth-child(2) {
+    padding: 0 8px;
+}
+
+    /*-------------------------
+        Responsive Behavior
+    -------------------------*/
+
+    @media (max-width: 992px) {
+
+        .display-active-filters > .col:nth-child(1) {
+            flex-grow: 1;
+        }
+        .display-active-filters > .col:nth-child(2) {
+            display: none;
+        }
+
+    }
+
+.display-active-filters > .col:nth-child(2) > .text-info {
+    margin-right: 4px;
+}
+
+/********************************************
+    14.2.6 | .display-form
+********************************************/
+
+.fieldset-body > .row > .col:not(:last-of-type) {
+    margin-right: 6px;
+}
+
+/********************************************
+    14.2.7 | .display-form-main-actions
+********************************************/
+
+.display-form-main-actions {
+    flex-wrap: wrap;
+    height: auto;
+}
+.display-form-main-actions > .col {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-form-main-actions > .col > *:not(:last-child) {
+    margin-right: 4px;
+}
+.display-form-main-actions > .col:first-child > .button-primary {
+    padding: 0 22px;
+}
+
+/********************************************
+    14.2.8 | .display-tab-nav
+********************************************/
+
+form > .display-tab-nav:not(:first-of-type) {
+    margin-top: 8px;
+}
+form > .display-tab-nav:first-of-type {
+    margin-top: 6px;
+}
+.display-tab-nav > .col {
+    align-items: center;
+    flex-direction: row;
+}
+
+/*=========================
+    .tab-nav-primary
+=========================*/
+
+.tab-nav-primary {
+    padding: 0 18px;
+}
+.tab-nav-primary > .col {
+    border-radius: 6px;
+    height: 36px;
+    position: relative;
+}
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tab-nav-primary > .col {
+        background-color: #FCFDFF; /* LIGHT MODE */
+        border: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tab-nav-primary > .col {
+        background-color: #FCFDFF; /* DARK MODE */
+        border: 1px solid #D2D3D7; /* DARK MODE */
+    }
+
+/*=========================
+    .tab-nav-secondary
+=========================*/
+
+    /*-------------------------
+        Light Mode
+    -------------------------*/
+
+    #light-mode .tab-nav-secondary {
+        border-bottom: 1px solid #D2D3D7; /* LIGHT MODE */
+    }
+
+    /*-------------------------
+        Dark Mode
+    -------------------------*/
+
+    #dark-mode .tab-nav-secondary {
+        border-bottom: 1px solid #D2D3D7; /* DARK MODE */
+    }
+
+.tab-nav-secondary > .col {
+    padding: 0 18px;
+}
+
+/*=========================
+    .tab-nav-tertiary
+=========================*/
+
+.tab-nav-tertiary {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 50px;
+}
+.tab-nav-tertiary > .col > *:first-of-type {
+    padding-left: 0;
+}
+
+/********************************************
+    14.2.9 | #new-request-actions
+********************************************/
+
+#new-request-actions {
+    padding: 0px 14px 6px 14px;
+}
+#new-request-actions > .col {
+    align-items: center;
+    flex-direction: row;
+}
+#new-request-actions > .col > .separation {
+    margin: 0 12px;
+}
+#new-request-actions > .col:last-child > *:not(:last-child) {
+    margin-right: 4px;
+}
+#new-request-details {
+    padding: 6px 14px 8px 14px;
+}
+#new-request-details > .col {
+    align-items: center;
+    flex-direction: row;
+}
+#new-request-details > .col > .separation {
+    margin: 0 12px;
+}
+
+/********************************************
+    14.2.10 | #display-configurations
+********************************************/
+
+#display-configurations > .display-body {
+    padding: 20px 12px 16px 12px;
+}
+#display-configurations form > fieldset:first-child {
+    padding-bottom: 12px;
+}
+#display-configurations form > .display-form-main-actions {
+    padding-top: 20px;
+}
+#display-configurations form > .fieldset-accordion-group > .fieldset-body {
+    align-self: flex-start;
+    max-width: 550px;
+    padding: 32px 36px;
+    width: 100%;
+}
+
