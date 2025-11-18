@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html id="airnguru" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html id="airnguru" class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html id="airnguru" class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html id="airnguru" class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="content-type" content="text/html" />
+		<title>Fare Visualizer | Airnguru</title>
+		<meta name="title" content="Fare Visualizer | Airnguru" />
+		<meta name="DC.Title" content="Fare Visualizer | Airnguru" />
+		<meta http-equiv="title" content="Fare Visualizer | Airnguru" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="language" content="en-US" />
+		<meta name="DC.language" content="en-US" />
+		<meta http-equiv="language" content="en-US" />
+		<meta name="robots" content="nofollow" />
+		<meta name="google" content="notranslate" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		  
+		<!-- Normalize -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!-- Custom -->
+		<link rel="stylesheet" type="text/css" href="includes/css/01-general.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/02-layout.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/03-buttons.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/04-anchors.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/05-dialog-panel.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/06-dropdown.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/07-tag-items.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/08-toggle.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/09-alert-bubble.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/10-separation.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/11-headlines.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/12-disclaimer.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/13-form.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/14-display-box.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/15-aside.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/16-workspace.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/17-modal.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/18-overlay.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/19-notifications.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/20-body-collapse.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/21-locked-screen.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/22-fonts.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/23-log-in.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/24-collapsible-box.css" />
+		<link rel="stylesheet" type="text/css" href="includes/css/placeholders.css" />
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/ed033078e2.js" crossorigin="anonymous"></script>
+
+		<!-- Scripts -->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body id="light-mode"> <!-- id="dark-mode" class="collapsed" -->
+		<div style="flex-grow: 1;"></div>
+        <aside>
+        	<section id="panel-alerts">
+        		<header>
+					<div class="row display-title">
+						<div class="col">
+							<h2>
+								Alerts
+							</h2>
+						</div>
+						<div class="col justify-flex-end">
+							<button type="button" class="button button-utility button-tertiary" data-tooltip="Full mode" data-flow="left">
+	        					<span>
+	        						<span class="button-icon">
+	        							<i class="fa-sharp fa-regular fa-expand-wide"></i>
+	        						</span>
+	        					</span>
+	        				</button>
+							<button type="button" class="button button-utility button-tertiary">
+	        					<span>
+	        						<span class="button-icon">
+	        							<i class="fa-sharp fa-solid fa-xmark"></i>
+	        						</span>
+	        					</span>
+	        				</button>
+						</div>
+					</div>
+				</header>
+				<div class="panel-body">
+
+
+
+
+
+
+					<div class="row display-tab-nav tab-nav-tertiary">
+						<div class="col">
+							<button type="button" class="button button-quaternary button-tab active" tabindex="-1"> <!-- class="active" / tabindex="-1" -->
+								<span>
+									<span class="button-text">
+										Fare Visualizer
+									</span>
+									<span class="button-quantity">
+										357
+									</span>
+								</span>
+							</button>
+							<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+								<span>
+									<span class="button-text">
+										Publishing Manager
+									</span>
+									<span class="button-quantity">
+										289
+									</span>
+								</span>
+							</button>
+							<button type="button" class="button button-quaternary button-tab"> <!-- class="active" / tabindex="-1" -->
+								<span>
+									<span class="button-text">
+										History
+									</span>
+								</span>
+							</button>
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="row display-actions">
+						<div class="col">
+							<div class="dialog-box"> <!-- class="active" -->
+		        				<button type="button" class="button button-secondary button-outlined button-sm">
+		        					<span>
+		        						<span class="button-text">
+		        							Status
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-auto bottom-left">
+									<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Pending
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Resolved
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Snooze
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Dismissed
+											</span>
+										</span>
+									</button>
+		        				</div>
+		        			</div>
+						</div>
+						<div class="col justify-flex-end">
+							<div class="form-group">
+								<div class="input-group">
+	        						<input type="text" placeholder="Search" class="input-search">
+	    						</div>
+	    					</div>
+	    					<button type="button" class="button button-utility button-secondary button-outlined button-sm" data-tooltip="Refresh" data-flow="bottom">
+	        					<span>
+	        						<span class="button-icon">
+	        							<i class="fa-sharp fa-regular fa-arrows-rotate"></i>
+	        						</span>
+	        					</span>
+	        				</button>
+							<div class="dialog-box"> <!-- class="active" -->
+		        				<button type="button" class="button button-utility button-secondary button-outlined button-sm" data-tooltip="Customization" data-flow="bottom">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-sharp fa-regular fa-gear"></i>
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-auto bottom-right">
+					        		<header>
+					        			<div>
+						        			<p>
+						        				Display customization
+						        			</p>
+										</div>
+					        		</header>
+					        		<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Columns
+											</span>
+										</span>
+									</button>
+					        		<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Color
+											</span>
+										</span>
+									</button>
+					        		<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Density
+											</span>
+										</span>
+										<span>
+			        						<span class="button-icon icon-chevron">
+												<i class="fa-sharp fa-solid fa-chevron-right"></i>
+											</span>
+			        					</span>
+									</button>
+									<div class="separation horizontal solid"></div>
+					        		<button type="button" class="button button-dialog-panel button-tertiary">
+										<span>
+											<span class="button-text">
+												Saved displays
+											</span>
+										</span>
+										<span>
+			        						<span class="button-icon icon-chevron">
+												<i class="fa-sharp fa-solid fa-chevron-right"></i>
+											</span>
+			        					</span>
+									</button>
+									<div class="save-action">
+						        		<button type="button" class="button button-primary">
+											<span>
+												<span class="button-text">
+													Save display
+												</span>
+											</span>
+										</button>
+									</div>
+		        				</div>
+		        			</div>
+							<!-- <div class="dialog-box"> <!- class="active" ->
+		        				<button type="button" class="button button-utility button-secondary button-outlined" data-tooltip="Customization" data-flow="bottom">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-sharp fa-regular fa-gear"></i>
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-auto bottom-right">
+					        		<header>
+					        			<div>
+						        			<button type="button" class="button button-link button-secondary">
+		    									<span>
+													<span class="button-icon icon-chevron">
+														<i class="fa-sharp fa-solid fa-chevron-left"></i>
+													</span>
+		    										<span class="button-text">
+		    											Back
+		    										</span>
+		    									</span>
+		    								</button>
+										</div>
+					        		</header>
+									<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Condensed
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Regular
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Relaxed
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+		        				</div>
+		        			</div> -->
+							<!-- <div class="dialog-box"> <!- class="active" ->
+		        				<button type="button" class="button button-utility button-secondary button-outlined" data-tooltip="Customization" data-flow="bottom">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-sharp fa-regular fa-gear"></i>
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-auto bottom-right">
+					        		<header>
+					        			<div>
+						        			<button type="button" class="button button-link button-secondary">
+		    									<span>
+													<span class="button-icon icon-chevron">
+														<i class="fa-sharp fa-solid fa-chevron-left"></i>
+													</span>
+		    										<span class="button-text">
+		    											Back
+		    										</span>
+		    									</span>
+		    								</button>
+										</div>
+					        		</header>
+					        		<p>
+					        			No saved displays
+					        		</p>
+									<div class="save-action">
+						        		<button type="button" class="button button-primary">
+											<span>
+												<span class="button-text">
+													Upload display
+												</span>
+											</span>
+										</button>
+									</div>
+		        				</div>
+		        			</div> -->
+							<!-- <div class="dialog-box"> <!- class="active" ->
+		        				<button type="button" class="button button-utility button-secondary button-outlined" data-tooltip="Customization" data-flow="bottom">
+		        					<span>
+		        						<span class="button-icon">
+		        							<i class="fa-sharp fa-regular fa-gear"></i>
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-scroll dialog-auto bottom-right">
+					        		<header>
+					        			<div>
+						        			<button type="button" class="button button-link button-secondary">
+		    									<span>
+													<span class="button-icon icon-chevron">
+														<i class="fa-sharp fa-solid fa-chevron-left"></i>
+													</span>
+		    										<span class="button-text">
+		    											Back
+		    										</span>
+		    									</span>
+		    								</button>
+		    								<button type="button" class="button button-utility button-tertiary button-xs" data-tooltip="Upload" data-flow="bottom">
+					        					<span>
+					        						<span class="button-icon">
+					        							<i class="fa-sharp fa-regular fa-file-arrow-up"></i>
+					        						</span>
+					        					</span>
+					        				</button>
+										</div>
+										<div class="form-group">
+		        							<div class="input-group">
+				        						<input type="text" placeholder="Search" class="input-search">
+			        						</div>
+			        					</div>
+					        		</header>
+									<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Display 1
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Display 2
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Display 3
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Display 4
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+									<button type="button" class="button button-select button-tertiary"> <!- class="active selected" / tabindex="-1" ->
+										<span>
+											<span class="button-text">
+												Display 5
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+		        				</div>
+		        			</div> -->
+						</div>
+					</div>
+					<div class="row display-table">
+						<div class="col overflow">
+							<div class="placeholder-table-container">
+								<div class="placeholder-table-content">
+									<table class="placeholder-table with-checkboxes with-actions">
+										<thead>
+											<tr>
+												<th>
+													<label class="checkbox deselect-all">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary sort-up"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Priority
+															</span>
+														</span>
+						        					</button>
+						        					<div class="separation vertical solid"></div>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Date
+															</span>
+														</span>
+						        					</button>
+						        					<div class="separation vertical solid"></div>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Time
+															</span>
+														</span>
+						        					</button>
+						        					<div class="separation vertical solid"></div>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Type
+															</span>
+														</span>
+						        					</button>
+						        					<div class="separation vertical solid"></div>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Records
+															</span>
+														</span>
+						        					</button>
+						        					<div class="separation vertical solid"></div>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-duotone fa-solid fa-sort"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Summary
+															</span>
+														</span>
+						        					</button>
+												</th>
+												<th>
+													<button type="button" class="button button-link button-sort button-secondary"> <!-- class="sort-up sort-down" -->
+					        							<span>
+							        						<span class="button-icon icon-arrow">
+																<i class="fa-light fa-arrow-up"></i>
+															</span>
+														</span>
+					        							<span>
+															<span class="button-text">
+																Actions
+															</span>
+															<span class="button-icon icon-chevron">
+																<i class="fa-sharp fa-solid fa-chevron-right"></i>
+															</span>
+														</span>
+						        					</button>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-secondary">
+					        							<span>
+					        								<span class="tag-text">
+						        								Low
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-warning">
+					        							<span>
+					        								<span class="tag-text">
+						        								Medium
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkbox">
+											            <input type="checkbox">
+											            <span class="checkbox-container"></span>
+											        </label>
+												</td>
+												<td>
+													<span class="tag-item tag-xs tag-danger">
+					        							<span>
+					        								<span class="tag-text">
+						        								High
+						        							</span>
+					        							</span>
+					        						</span>
+												</td>
+												<td>
+													14-Dec-24
+												</td>
+												<td>
+													12:00:00 AM
+												</td>
+												<td>
+													Publishing Manager Rejections
+												</td>
+												<td>
+													723
+												</td>
+												<td>
+													4 requests rejected in Publishing Manager
+												</td>
+												<td>
+													<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Preview" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-eye"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+							        				<button type="button" class="button button-utility button-secondary button-outlined button-xs" data-tooltip="Go to module" data-flow="bottom">
+							        					<span>
+							        						<span class="button-icon">
+							        							<i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+							        						</span>
+							        					</span>
+							        				</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row display-pagination">
+						<div class="col">
+							<div class="dialog-box"> <!-- class="active" -->
+		        				<button type="button" class="button button-secondary button-outlined">
+		        					<span>
+		        						<span class="button-text">
+		        							1000
+		        						</span>
+		        					</span>
+		        					<span>
+		        						<span class="button-icon icon-caret">
+		        							<i class="fa-solid fa-caret-down"></i>
+		        						</span>
+		        					</span>
+		        				</button>
+		        				<div class="dialog-panel dialog-auto dialog-scroll top-left">
+					        		<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												100
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+					        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												200
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+					        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												500
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+					        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+										<span>
+											<span class="button-text">
+												1000
+											</span>
+										</span>
+										<span>
+											<span class="button-icon icon-check">
+												<i class="fa-sharp fa-solid fa-check"></i>
+											</span>
+										</span>
+									</button>
+		        				</div>
+		        			</div>
+							<span class="text-info">
+				        		Rows 1–1000 of 6732
+				        	</span>
+						</div>
+						<div class="col justify-flex-end">
+							<div class="button-group">
+			        			<button type="button" class="button button-utility button-secondary button-outlined">
+		        					<span>
+		        						<span class="button-icon icon-chevron">
+											<i class="fa-sharp fa-solid fa-chevron-left"></i>
+										</span>
+		        					</span>
+		        				</button>
+								<div class="dialog-box"> <!-- class="active" -->
+			        				<button type="button" class="button button-secondary button-outlined">
+			        					<span>
+			        						<span class="button-text">
+			        							1 of 7
+			        						</span>
+			        					</span>
+			        					<span>
+			        						<span class="button-icon icon-caret">
+			        							<i class="fa-solid fa-caret-down"></i>
+			        						</span>
+			        					</span>
+			        				</button>
+			        				<div class="dialog-panel dialog-auto dialog-scroll top-right">
+						        		<header>
+						        			<div class="form-group">
+			        							<div class="input-group">
+					        						<input type="text" placeholder="Search" class="input-search">
+				        						</div>
+				        					</div>
+						        		</header>
+						        		<button type="button" tabindex="-1" class="button button-select button-tertiary active selected"> <!-- class="active selected" / tabindex="-1" -->
+											<span>
+												<span class="button-text">
+													1
+												</span>
+											</span>
+											<span>
+												<span class="button-icon icon-check">
+													<i class="fa-sharp fa-solid fa-check"></i>
+												</span>
+											</span>
+										</button>
+						        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+											<span>
+												<span class="button-text">
+													2
+												</span>
+											</span>
+											<span>
+												<span class="button-icon icon-check">
+													<i class="fa-sharp fa-solid fa-check"></i>
+												</span>
+											</span>
+										</button>
+						        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+											<span>
+												<span class="button-text">
+													3
+												</span>
+											</span>
+											<span>
+												<span class="button-icon icon-check">
+													<i class="fa-sharp fa-solid fa-check"></i>
+												</span>
+											</span>
+										</button>
+						        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+											<span>
+												<span class="button-text">
+													4
+												</span>
+											</span>
+											<span>
+												<span class="button-icon icon-check">
+													<i class="fa-sharp fa-solid fa-check"></i>
+												</span>
+											</span>
+										</button>
+						        		<button type="button" class="button button-select button-tertiary"> <!-- class="active selected" / tabindex="-1" -->
+											<span>
+												<span class="button-text">
+													5
+												</span>
+											</span>
+											<span>
+												<span class="button-icon icon-check">
+													<i class="fa-sharp fa-solid fa-check"></i>
+												</span>
+											</span>
+										</button>
+										<p>
+											No results
+										</p>
+			        				</div>
+			        			</div>
+			        			<button type="button" class="button button-utility button-secondary button-outlined">
+		        					<span>
+		        						<span class="button-icon icon-chevron">
+											<i class="fa-sharp fa-solid fa-chevron-right"></i>
+										</span>
+		        					</span>
+		        				</button>
+			        		</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        </aside>
+
+		<!-- jQuery  -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+			
+		<!-- Main -->
+		<script type="text/javascript" src="includes/js/main.js"></script>
+	</body>
+</html>
